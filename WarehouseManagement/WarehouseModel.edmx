@@ -724,7 +724,6 @@
           <NavigationProperty Name="Employees1" Relationship="Self.FK__Employees__Emplo__38996AB5" FromRole="Employees" ToRole="Employees1" />
           <NavigationProperty Name="Employee1" Relationship="Self.FK__Employees__Emplo__38996AB5" FromRole="Employees1" ToRole="Employees" />
           <NavigationProperty Name="Warehouses" Relationship="Self.FK__Warehouse__Manag__3B75D760" FromRole="Employees" ToRole="Warehouses" />
-          <NavigationProperty Name="Warehouses1" Relationship="Self.fk_ManagerID_Employees" FromRole="Employees" ToRole="Warehouses" />
         </EntityType>
         <EntityType Name="IssuanceOrderItem">
           <Key>
@@ -750,8 +749,6 @@
           <NavigationProperty Name="IssuanceOrderItems" Relationship="Self.FK__IssuanceO__Issua__4F7CD00D" FromRole="IssuanceOrders" ToRole="IssuanceOrderItems" />
           <NavigationProperty Name="Supplier" Relationship="Self.FK__IssuanceO__Suppl__4CA06362" FromRole="IssuanceOrders" ToRole="Suppliers" />
           <NavigationProperty Name="Warehouse" Relationship="Self.FK__IssuanceO__Wareh__4BAC3F29" FromRole="IssuanceOrders" ToRole="Warehouses" />
-          <NavigationProperty Name="Supplier1" Relationship="Self.fk_SupplierID_Suppliers2" FromRole="IssuanceOrders" ToRole="Suppliers" />
-          <NavigationProperty Name="Warehouse1" Relationship="Self.fk_WarehouseID_Warehouses2" FromRole="IssuanceOrders" ToRole="Warehouses" />
         </EntityType>
         <EntityType Name="Item">
           <Key>
@@ -797,12 +794,9 @@
           <Property Name="SupplierEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="SupplierWebsite" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="IssuanceOrders" Relationship="Self.FK__IssuanceO__Suppl__4CA06362" FromRole="Suppliers" ToRole="IssuanceOrders" />
-          <NavigationProperty Name="IssuanceOrders1" Relationship="Self.fk_SupplierID_Suppliers2" FromRole="Suppliers" ToRole="IssuanceOrders" />
           <NavigationProperty Name="ItemSuppliers" Relationship="Self.FK_ItemSupplier_Supplier" FromRole="Suppliers" ToRole="ItemSupplier" />
           <NavigationProperty Name="SupplyOrders" Relationship="Self.FK__SupplyOrd__Suppl__44FF419A" FromRole="Suppliers" ToRole="SupplyOrders" />
           <NavigationProperty Name="Transfers" Relationship="Self.FK__Transfers__Suppl__5629CD9C" FromRole="Suppliers" ToRole="Transfers" />
-          <NavigationProperty Name="SupplyOrders1" Relationship="Self.fk_SupplierID_Suppliers" FromRole="Suppliers" ToRole="SupplyOrders" />
-          <NavigationProperty Name="Transfers1" Relationship="Self.fk_SupplierID_Suppliers3" FromRole="Suppliers" ToRole="Transfers" />
           <NavigationProperty Name="WarehouseSuppliers" Relationship="Self.FK_WarehouseSupplier_Supplier" FromRole="Suppliers" ToRole="WarehouseSupplier" />
         </EntityType>
         <EntityType Name="SupplyOrderItem">
@@ -829,10 +823,8 @@
           <Property Name="SupplierID" Type="Int32" Nullable="false" />
           <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Supplier" Relationship="Self.FK__SupplyOrd__Suppl__44FF419A" FromRole="SupplyOrders" ToRole="Suppliers" />
-          <NavigationProperty Name="Supplier1" Relationship="Self.fk_SupplierID_Suppliers" FromRole="SupplyOrders" ToRole="Suppliers" />
           <NavigationProperty Name="SupplyOrderItems" Relationship="Self.FK__SupplyOrd__Suppl__47DBAE45" FromRole="SupplyOrders" ToRole="SupplyOrderItems" />
           <NavigationProperty Name="Warehouse" Relationship="Self.FK__SupplyOrd__Wareh__440B1D61" FromRole="SupplyOrders" ToRole="Warehouses" />
-          <NavigationProperty Name="Warehouse1" Relationship="Self.fk_WarehouseID_Warehouses" FromRole="SupplyOrders" ToRole="Warehouses" />
         </EntityType>
         <EntityType Name="sysdiagram">
           <Key>
@@ -867,11 +859,8 @@
           <Property Name="SupplierID" Type="Int32" Nullable="false" />
           <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Supplier" Relationship="Self.FK__Transfers__Suppl__5629CD9C" FromRole="Transfers" ToRole="Suppliers" />
-          <NavigationProperty Name="Supplier1" Relationship="Self.fk_SupplierID_Suppliers3" FromRole="Transfers" ToRole="Suppliers" />
           <NavigationProperty Name="TransferItems" Relationship="Self.FK_TransferItems_Transfers" FromRole="Transfers" ToRole="TransferItems" />
           <NavigationProperty Name="Warehouse" Relationship="Self.FK__Transfers__FromW__534D60F1" FromRole="Transfers" ToRole="Warehouses" />
-          <NavigationProperty Name="Warehouse1" Relationship="Self.FK__Transfers__ToWar__5441852A" FromRole="Transfers" ToRole="Warehouses" />
-          <NavigationProperty Name="Warehouse2" Relationship="Self.fk_ToWarehouseID_Warehouses" FromRole="Transfers" ToRole="Warehouses" />
         </EntityType>
         <EntityType Name="WarehouseCustomer">
           <Key>
@@ -903,14 +892,9 @@
           <Property Name="WarehouseAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ManagerID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Employee" Relationship="Self.FK__Warehouse__Manag__3B75D760" FromRole="Warehouses" ToRole="Employees" />
-          <NavigationProperty Name="Employee1" Relationship="Self.fk_ManagerID_Employees" FromRole="Warehouses" ToRole="Employees" />
           <NavigationProperty Name="IssuanceOrders" Relationship="Self.FK__IssuanceO__Wareh__4BAC3F29" FromRole="Warehouses" ToRole="IssuanceOrders" />
-          <NavigationProperty Name="IssuanceOrders1" Relationship="Self.fk_WarehouseID_Warehouses2" FromRole="Warehouses" ToRole="IssuanceOrders" />
           <NavigationProperty Name="SupplyOrders" Relationship="Self.FK__SupplyOrd__Wareh__440B1D61" FromRole="Warehouses" ToRole="SupplyOrders" />
-          <NavigationProperty Name="SupplyOrders1" Relationship="Self.fk_WarehouseID_Warehouses" FromRole="Warehouses" ToRole="SupplyOrders" />
           <NavigationProperty Name="Transfers" Relationship="Self.FK__Transfers__FromW__534D60F1" FromRole="Warehouses" ToRole="Transfers" />
-          <NavigationProperty Name="Transfers1" Relationship="Self.FK__Transfers__ToWar__5441852A" FromRole="Warehouses" ToRole="Transfers" />
-          <NavigationProperty Name="Transfers2" Relationship="Self.fk_ToWarehouseID_Warehouses" FromRole="Warehouses" ToRole="Transfers" />
           <NavigationProperty Name="WarehouseCustomers" Relationship="Self.FK_WarehouseCustomer_Warehouse" FromRole="Warehouses" ToRole="WarehouseCustomer" />
           <NavigationProperty Name="WarehouseItems" Relationship="Self.FK_WarehouseItem_Warehouse" FromRole="Warehouses" ToRole="WarehouseItem" />
           <NavigationProperty Name="WarehouseSuppliers" Relationship="Self.FK_WarehouseSupplier_Warehouse" FromRole="Warehouses" ToRole="WarehouseSupplier" />

@@ -8,7 +8,7 @@ namespace WarehouseManagement.Forms
 {
     public partial class SupplyOrdersForm : Form
     {
-        WarehouseManagementDBEntities warehouseManagementDB = new WarehouseManagementDBEntities();
+        readonly WarehouseManagementDBEntities warehouseManagementDB = new WarehouseManagementDBEntities();
         private SupplyOrder currentSupplyOrder;
 
         private bool isEdit;
@@ -21,7 +21,17 @@ namespace WarehouseManagement.Forms
         {
 
 
-            var supplyOrders = warehouseManagementDB.SupplyOrders.ToList();
+            var supplyOrders = warehouseManagementDB.SupplyOrders
+                .Select(so => new
+                {
+                    so.SupplyOrderID,
+                    so.OrderNumber,
+                    so.OrderDate,
+                    so.WarehouseID,
+                    so.Warehouse.WarehouseName,
+                    so.SupplierID,
+                    so.Supplier.SupplierName,
+                }).ToList();
             supplyOrderDataGrid.DataSource = supplyOrders;
 
 
@@ -37,32 +47,50 @@ namespace WarehouseManagement.Forms
             UpdateGridComboViews();
             isEdit = false;
 
+
+            tabControl1.TabPages.Remove(itemsListPage);
+            tabControl1.TabPages.Remove(itemAddEditPage);
+            tabControl1.TabPages.Remove(SupplyOrdersAddEditPage);
+
         }
 
 
         private void DataSearchBar_TextChanged(object sender, EventArgs e)
         {
-            string searchText = dataSearchBar.Text.ToLower();
-            List<SupplyOrder> filteredSupplyOrders = warehouseManagementDB.SupplyOrders
-                 .Where(supplyOrder =>
-                     supplyOrder.SupplyOrderID.ToString().Contains(searchText)
-                     || supplyOrder.WarehouseID.ToString().Contains(searchText)
-                     || supplyOrder.OrderNumber.ToString().Contains(searchText)
-                     || supplyOrder.SupplyOrderID.ToString().Contains(searchText))
-                 .ToList();
 
-            // Filter by OrderDate, ProductionDate, and ExpirationDate after the initial filtering
-            filteredSupplyOrders = filteredSupplyOrders
-                .Where(supplyOrder =>
-                    supplyOrder.OrderDate.ToString("d").Contains(searchText))
-                .ToList();
-            if (filteredSupplyOrders.Any())
+            string searchQuery = dataSearchBar.Text.ToLower();
+
+            try
             {
-                supplyOrderDataGrid.DataSource = filteredSupplyOrders;
+                var filteredData = warehouseManagementDB.SupplyOrders
+                    .Where(supplyOrder =>
+                     supplyOrder.SupplyOrderID.ToString().Contains(searchQuery)
+                     || supplyOrder.WarehouseID.ToString().Contains(searchQuery)
+                     || supplyOrder.OrderNumber.ToString().Contains(searchQuery)
+                     || supplyOrder.OrderDate.ToString().Contains(searchQuery)
+                     || supplyOrder.Warehouse.WarehouseName.ToLower().Contains(searchQuery)
+                     || supplyOrder.Supplier.SupplierName.ToLower().Contains(searchQuery)
+                     || supplyOrder.SupplierID.ToString().Contains(searchQuery))
+                    .Select(so => new
+                    {
+                        so.SupplyOrderID,
+                        so.OrderNumber,
+                        so.OrderDate,
+                        so.WarehouseID,
+                        so.Warehouse.WarehouseName,
+                        so.SupplierID,
+                        so.Supplier.SupplierName,
+                    }).ToList();
+
+                supplyOrderDataGrid.DataSource = filteredData;
+                if (filteredData.Count == 0)
+                {
+                    MessageBox.Show("No matching data found.");
+                }
             }
-            else
+            catch (Exception ex)
             {
-                supplyOrderDataGrid.DataSource = null;
+                MessageBox.Show("An error occurred while searching for data: " + ex.Message);
             }
         }
 
@@ -73,8 +101,8 @@ namespace WarehouseManagement.Forms
             {
                 int supplyOrderId = (int)supplyOrderDataGrid.Rows[e.RowIndex].Cells[0].Value;
                 currentSupplyOrder = warehouseManagementDB.SupplyOrders.Find(supplyOrderId);
-                /*                allDataComboBox.SelectedItem = currentSupplyOrder.DisplayText;
-                */
+                /*allDataComboBox.SelectedItem = currentSupplyOrder.DisplayText;*/
+                allDataComboBox.SelectedIndex = e.RowIndex;
             }
         }
 
@@ -146,6 +174,12 @@ namespace WarehouseManagement.Forms
         {
             tabControl1.TabPages.Remove(SupplyOrdersAddEditPage);
             tabControl1.TabPages.Add(SupplyOrdersListPage);
+        }
+
+        private void ViewItemsButton_Click(object sender, EventArgs e)
+        {
+            tabControl1.TabPages.Remove(SupplyOrdersListPage);
+            tabControl1.TabPages.Add(itemsListPage);
         }
     }
 }

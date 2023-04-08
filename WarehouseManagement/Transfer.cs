@@ -27,11 +27,8 @@ namespace WarehouseManagement
         public string Status { get; set; }
     
         public virtual Supplier Supplier { get; set; }
-        public virtual Supplier Supplier1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TransferItem> TransferItems { get; set; }
         public virtual Warehouse Warehouse { get; set; }
-        public virtual Warehouse Warehouse1 { get; set; }
-        public virtual Warehouse Warehouse2 { get; set; }
     }
 }

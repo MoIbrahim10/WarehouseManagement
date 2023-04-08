@@ -31,7 +31,5 @@ namespace WarehouseManagement
         public virtual ICollection<IssuanceOrderItem> IssuanceOrderItems { get; set; }
         public virtual Supplier Supplier { get; set; }
         public virtual Warehouse Warehouse { get; set; }
-        public virtual Supplier Supplier1 { get; set; }
-        public virtual Warehouse Warehouse1 { get; set; }
     }
 }
