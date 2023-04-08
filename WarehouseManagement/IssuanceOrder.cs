@@ -25,10 +25,13 @@ namespace WarehouseManagement
         public int OrderNumber { get; set; }
         public System.DateTime OrderDate { get; set; }
         public int SupplierID { get; set; }
+        public string Status { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<IssuanceOrderItem> IssuanceOrderItems { get; set; }
         public virtual Supplier Supplier { get; set; }
         public virtual Warehouse Warehouse { get; set; }
+        public virtual Supplier Supplier1 { get; set; }
+        public virtual Warehouse Warehouse1 { get; set; }
     }
 }

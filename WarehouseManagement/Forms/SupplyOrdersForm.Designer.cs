@@ -53,14 +53,14 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtSupplierPhone = new System.Windows.Forms.TextBox();
             this.SupplierPhoneLabel = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txtSupplierEmail = new System.Windows.Forms.TextBox();
-            this.SupplierEmailLabel = new System.Windows.Forms.Label();
             this.backBtn = new WarehouseManagement.CustamizedButton();
             this.AddEditSupplyOrderBtn = new WarehouseManagement.CustamizedButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtSupplierName = new System.Windows.Forms.TextBox();
             this.SupplierNameLabel = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.SupplyOrdersListPage.SuspendLayout();
             this.supplyOrderMainPanel.SuspendLayout();
@@ -72,8 +72,8 @@
             this.panel6.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -269,11 +269,11 @@
             // 
             // addWarehousPanel
             // 
+            this.addWarehousPanel.Controls.Add(this.panel4);
             this.addWarehousPanel.Controls.Add(this.panel5);
             this.addWarehousPanel.Controls.Add(this.panel6);
             this.addWarehousPanel.Controls.Add(this.panel2);
             this.addWarehousPanel.Controls.Add(this.panel3);
-            this.addWarehousPanel.Controls.Add(this.panel4);
             this.addWarehousPanel.Controls.Add(this.backBtn);
             this.addWarehousPanel.Controls.Add(this.AddEditSupplyOrderBtn);
             this.addWarehousPanel.Controls.Add(this.panel1);
@@ -412,38 +412,6 @@
             this.SupplierPhoneLabel.TabIndex = 1;
             this.SupplierPhoneLabel.Text = "Supplier Phone";
             // 
-            // panel4
-            // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel4.Controls.Add(this.txtSupplierEmail);
-            this.panel4.Controls.Add(this.SupplierEmailLabel);
-            this.panel4.Location = new System.Drawing.Point(829, 95);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(613, 128);
-            this.panel4.TabIndex = 3;
-            // 
-            // txtSupplierEmail
-            // 
-            this.txtSupplierEmail.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
-            this.txtSupplierEmail.Location = new System.Drawing.Point(351, 45);
-            this.txtSupplierEmail.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txtSupplierEmail.Name = "txtSupplierEmail";
-            this.txtSupplierEmail.Size = new System.Drawing.Size(216, 35);
-            this.txtSupplierEmail.TabIndex = 2;
-            // 
-            // SupplierEmailLabel
-            // 
-            this.SupplierEmailLabel.AutoSize = true;
-            this.SupplierEmailLabel.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SupplierEmailLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.SupplierEmailLabel.Location = new System.Drawing.Point(46, 48);
-            this.SupplierEmailLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.SupplierEmailLabel.Name = "SupplierEmailLabel";
-            this.SupplierEmailLabel.Size = new System.Drawing.Size(162, 28);
-            this.SupplierEmailLabel.TabIndex = 1;
-            this.SupplierEmailLabel.Text = "Supplier Email";
-            // 
             // backBtn
             // 
             this.backBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -519,6 +487,38 @@
             this.SupplierNameLabel.TabIndex = 1;
             this.SupplierNameLabel.Text = "Supplier Name";
             // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.label1);
+            this.panel4.Location = new System.Drawing.Point(824, 95);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(618, 128);
+            this.panel4.TabIndex = 3;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
+            this.textBox1.Location = new System.Drawing.Point(351, 45);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(216, 35);
+            this.textBox1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label1.Location = new System.Drawing.Point(46, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(164, 28);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Supplier Name";
+            // 
             // SupplyOrdersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -554,10 +554,10 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -589,13 +589,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtSupplierPhone;
         private System.Windows.Forms.Label SupplierPhoneLabel;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox txtSupplierEmail;
-        private System.Windows.Forms.Label SupplierEmailLabel;
         private CustamizedButton backBtn;
         private CustamizedButton AddEditSupplyOrderBtn;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtSupplierName;
         private System.Windows.Forms.Label SupplierNameLabel;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

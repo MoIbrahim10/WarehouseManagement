@@ -12,15 +12,15 @@ namespace WarehouseManagement
     using System;
     using System.Collections.Generic;
     
-    public partial class SupplyOrderItem
+    public partial class TransferItem
     {
-        public int SupplyOrderID { get; set; }
+        public int TransferID { get; set; }
         public int ItemID { get; set; }
         public int Quantity { get; set; }
         public System.DateTime ProductionDate { get; set; }
         public System.DateTime ExpirationDate { get; set; }
     
         public virtual Item Item { get; set; }
-        public virtual SupplyOrder SupplyOrder { get; set; }
+        public virtual Transfer Transfer { get; set; }
     }
 }

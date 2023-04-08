@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WarehouseManagement.Forms
@@ -39,6 +35,7 @@ namespace WarehouseManagement.Forms
         private void SupplyOrdersForm_Load(object sender, EventArgs e)
         {
             UpdateGridComboViews();
+            isEdit = false;
 
         }
 
@@ -57,9 +54,7 @@ namespace WarehouseManagement.Forms
             // Filter by OrderDate, ProductionDate, and ExpirationDate after the initial filtering
             filteredSupplyOrders = filteredSupplyOrders
                 .Where(supplyOrder =>
-                    supplyOrder.OrderDate.ToString("d").Contains(searchText)
-                    || supplyOrder.ProductionDate.ToString("d").Contains(searchText)
-                    || supplyOrder.ExpirationDate.ToString("d").Contains(searchText))
+                    supplyOrder.OrderDate.ToString("d").Contains(searchText))
                 .ToList();
             if (filteredSupplyOrders.Any())
             {

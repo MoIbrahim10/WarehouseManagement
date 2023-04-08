@@ -61,6 +61,27 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtCustomerName = new System.Windows.Forms.TextBox();
             this.CustomerNameLabel = new System.Windows.Forms.Label();
+            this.customerWarehousePage = new System.Windows.Forms.TabPage();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.CustomerComboBox = new System.Windows.Forms.ComboBox();
+            this.warehouseCustomerComboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
+            this.editCustomerWarehouseButton = new WarehouseManagement.CustamizedButton();
+            this.deleteCustomerWarehouseButton = new WarehouseManagement.CustamizedButton();
+            this.addCustomerWarehouseButton = new WarehouseManagement.CustamizedButton();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.searchCustomerWarehousetextBox = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.customerWarehousesDataGridView = new System.Windows.Forms.DataGridView();
+            this.customerWarehouseEditPage = new System.Windows.Forms.TabPage();
+            this.panel14 = new System.Windows.Forms.Panel();
+            this.custamizedButton4 = new WarehouseManagement.CustamizedButton();
+            this.saveWarehouseToCustomerBtn = new WarehouseManagement.CustamizedButton();
+            this.panel16 = new System.Windows.Forms.Panel();
+            this.warehouseNameComboBox1 = new System.Windows.Forms.ComboBox();
+            this.warehouseNameLbl = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.customerNameLbl = new System.Windows.Forms.Label();
+            this.customerNameComboBox = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.CustomersListPage.SuspendLayout();
             this.customerMainPanel.SuspendLayout();
@@ -74,6 +95,14 @@
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.customerWarehousePage.SuspendLayout();
+            this.panel9.SuspendLayout();
+            this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customerWarehousesDataGridView)).BeginInit();
+            this.customerWarehouseEditPage.SuspendLayout();
+            this.panel14.SuspendLayout();
+            this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -81,6 +110,8 @@
             this.tabControl1.CausesValidation = false;
             this.tabControl1.Controls.Add(this.CustomersListPage);
             this.tabControl1.Controls.Add(this.CustomersAddEditPage);
+            this.tabControl1.Controls.Add(this.customerWarehousePage);
+            this.tabControl1.Controls.Add(this.customerWarehouseEditPage);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Verdana Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.ItemSize = new System.Drawing.Size(180, 40);
@@ -522,6 +553,314 @@
             this.CustomerNameLabel.TabIndex = 1;
             this.CustomerNameLabel.Text = "Customer Name";
             // 
+            // customerWarehousePage
+            // 
+            this.customerWarehousePage.Controls.Add(this.panel9);
+            this.customerWarehousePage.Location = new System.Drawing.Point(4, 44);
+            this.customerWarehousePage.Name = "customerWarehousePage";
+            this.customerWarehousePage.Size = new System.Drawing.Size(1571, 830);
+            this.customerWarehousePage.TabIndex = 2;
+            this.customerWarehousePage.Text = "Customer Warehouse List";
+            this.customerWarehousePage.UseVisualStyleBackColor = true;
+            this.customerWarehousePage.Enter += new System.EventHandler(this.CustomerWarehousePage_Enter);
+            // 
+            // panel9
+            // 
+            this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.panel9.Controls.Add(this.CustomerComboBox);
+            this.panel9.Controls.Add(this.warehouseCustomerComboBox1);
+            this.panel9.Controls.Add(this.editCustomerWarehouseButton);
+            this.panel9.Controls.Add(this.deleteCustomerWarehouseButton);
+            this.panel9.Controls.Add(this.addCustomerWarehouseButton);
+            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Controls.Add(this.customerWarehousesDataGridView);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel9.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F);
+            this.panel9.Location = new System.Drawing.Point(0, 0);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(1571, 830);
+            this.panel9.TabIndex = 9;
+            // 
+            // CustomerComboBox
+            // 
+            this.CustomerComboBox.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerComboBox.FormattingEnabled = true;
+            this.CustomerComboBox.Location = new System.Drawing.Point(125, 119);
+            this.CustomerComboBox.Name = "CustomerComboBox";
+            this.CustomerComboBox.Size = new System.Drawing.Size(324, 36);
+            this.CustomerComboBox.TabIndex = 20;
+            this.CustomerComboBox.SelectedIndexChanged += new System.EventHandler(this.CustomerComboBox_SelectedIndexChanged);
+            // 
+            // warehouseCustomerComboBox1
+            // 
+            this.warehouseCustomerComboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.warehouseCustomerComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.warehouseCustomerComboBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.warehouseCustomerComboBox1.BorderSize = 1;
+            this.warehouseCustomerComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.warehouseCustomerComboBox1.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
+            this.warehouseCustomerComboBox1.ForeColor = System.Drawing.Color.DimGray;
+            this.warehouseCustomerComboBox1.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.warehouseCustomerComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.warehouseCustomerComboBox1.ListTextColor = System.Drawing.Color.DimGray;
+            this.warehouseCustomerComboBox1.Location = new System.Drawing.Point(1175, 111);
+            this.warehouseCustomerComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.warehouseCustomerComboBox1.MinimumSize = new System.Drawing.Size(250, 47);
+            this.warehouseCustomerComboBox1.Name = "warehouseCustomerComboBox1";
+            this.warehouseCustomerComboBox1.Padding = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.warehouseCustomerComboBox1.Size = new System.Drawing.Size(324, 47);
+            this.warehouseCustomerComboBox1.TabIndex = 18;
+            this.warehouseCustomerComboBox1.Texts = "";
+            // 
+            // editCustomerWarehouseButton
+            // 
+            this.editCustomerWarehouseButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.editCustomerWarehouseButton.BackColor = System.Drawing.Color.LightSlateGray;
+            this.editCustomerWarehouseButton.BackgroundColor = System.Drawing.Color.LightSlateGray;
+            this.editCustomerWarehouseButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.editCustomerWarehouseButton.BorderRadius = 7;
+            this.editCustomerWarehouseButton.BorderSize = 0;
+            this.editCustomerWarehouseButton.FlatAppearance.BorderSize = 0;
+            this.editCustomerWarehouseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.editCustomerWarehouseButton.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.editCustomerWarehouseButton.ForeColor = System.Drawing.Color.White;
+            this.editCustomerWarehouseButton.Location = new System.Drawing.Point(1194, 472);
+            this.editCustomerWarehouseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.editCustomerWarehouseButton.Name = "editCustomerWarehouseButton";
+            this.editCustomerWarehouseButton.Size = new System.Drawing.Size(305, 109);
+            this.editCustomerWarehouseButton.TabIndex = 17;
+            this.editCustomerWarehouseButton.Text = "Edit Warehouse";
+            this.editCustomerWarehouseButton.TextColor = System.Drawing.Color.White;
+            this.editCustomerWarehouseButton.UseVisualStyleBackColor = false;
+            this.editCustomerWarehouseButton.Click += new System.EventHandler(this.EditCustomerWarehouseButton_Click);
+            // 
+            // deleteCustomerWarehouseButton
+            // 
+            this.deleteCustomerWarehouseButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.deleteCustomerWarehouseButton.BackColor = System.Drawing.Color.Crimson;
+            this.deleteCustomerWarehouseButton.BackgroundColor = System.Drawing.Color.Crimson;
+            this.deleteCustomerWarehouseButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.deleteCustomerWarehouseButton.BorderRadius = 7;
+            this.deleteCustomerWarehouseButton.BorderSize = 0;
+            this.deleteCustomerWarehouseButton.FlatAppearance.BorderSize = 0;
+            this.deleteCustomerWarehouseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.deleteCustomerWarehouseButton.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.deleteCustomerWarehouseButton.ForeColor = System.Drawing.Color.White;
+            this.deleteCustomerWarehouseButton.Location = new System.Drawing.Point(1194, 631);
+            this.deleteCustomerWarehouseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.deleteCustomerWarehouseButton.Name = "deleteCustomerWarehouseButton";
+            this.deleteCustomerWarehouseButton.Size = new System.Drawing.Size(305, 109);
+            this.deleteCustomerWarehouseButton.TabIndex = 16;
+            this.deleteCustomerWarehouseButton.Text = "Delete Warehouse";
+            this.deleteCustomerWarehouseButton.TextColor = System.Drawing.Color.White;
+            this.deleteCustomerWarehouseButton.UseVisualStyleBackColor = false;
+            this.deleteCustomerWarehouseButton.Click += new System.EventHandler(this.DeleteCustomerWarehouseButton_Click);
+            // 
+            // addCustomerWarehouseButton
+            // 
+            this.addCustomerWarehouseButton.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addCustomerWarehouseButton.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.addCustomerWarehouseButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.addCustomerWarehouseButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.addCustomerWarehouseButton.BorderRadius = 7;
+            this.addCustomerWarehouseButton.BorderSize = 0;
+            this.addCustomerWarehouseButton.FlatAppearance.BorderSize = 0;
+            this.addCustomerWarehouseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addCustomerWarehouseButton.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.addCustomerWarehouseButton.ForeColor = System.Drawing.Color.White;
+            this.addCustomerWarehouseButton.Location = new System.Drawing.Point(1194, 313);
+            this.addCustomerWarehouseButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addCustomerWarehouseButton.Name = "addCustomerWarehouseButton";
+            this.addCustomerWarehouseButton.Size = new System.Drawing.Size(305, 109);
+            this.addCustomerWarehouseButton.TabIndex = 15;
+            this.addCustomerWarehouseButton.Text = "Add Warehouse";
+            this.addCustomerWarehouseButton.TextColor = System.Drawing.Color.White;
+            this.addCustomerWarehouseButton.UseVisualStyleBackColor = false;
+            this.addCustomerWarehouseButton.Click += new System.EventHandler(this.AddCustomerWarehouseButton_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.searchCustomerWarehousetextBox);
+            this.panel10.Controls.Add(this.label2);
+            this.panel10.Location = new System.Drawing.Point(523, 63);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(613, 156);
+            this.panel10.TabIndex = 14;
+            // 
+            // searchCustomerWarehousetextBox
+            // 
+            this.searchCustomerWarehousetextBox.Font = new System.Drawing.Font("Verdana Pro", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchCustomerWarehousetextBox.Location = new System.Drawing.Point(224, 52);
+            this.searchCustomerWarehousetextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.searchCustomerWarehousetextBox.Name = "searchCustomerWarehousetextBox";
+            this.searchCustomerWarehousetextBox.Size = new System.Drawing.Size(288, 35);
+            this.searchCustomerWarehousetextBox.TabIndex = 20;
+            this.searchCustomerWarehousetextBox.TextChanged += new System.EventHandler(this.SearchCustomerWarehousetextBox_TextChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label2.Location = new System.Drawing.Point(75, 56);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(99, 28);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Search";
+            // 
+            // customerWarehousesDataGridView
+            // 
+            this.customerWarehousesDataGridView.AllowUserToAddRows = false;
+            this.customerWarehousesDataGridView.AllowUserToDeleteRows = false;
+            this.customerWarehousesDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.customerWarehousesDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.customerWarehousesDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.customerWarehousesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.customerWarehousesDataGridView.Location = new System.Drawing.Point(125, 267);
+            this.customerWarehousesDataGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.customerWarehousesDataGridView.Name = "customerWarehousesDataGridView";
+            this.customerWarehousesDataGridView.ReadOnly = true;
+            this.customerWarehousesDataGridView.RowHeadersWidth = 51;
+            this.customerWarehousesDataGridView.RowTemplate.Height = 24;
+            this.customerWarehousesDataGridView.Size = new System.Drawing.Size(1011, 496);
+            this.customerWarehousesDataGridView.TabIndex = 6;
+            this.customerWarehousesDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomerWarehousesDataGrid_CellClick);
+            // 
+            // customerWarehouseEditPage
+            // 
+            this.customerWarehouseEditPage.Controls.Add(this.panel14);
+            this.customerWarehouseEditPage.Location = new System.Drawing.Point(4, 44);
+            this.customerWarehouseEditPage.Name = "customerWarehouseEditPage";
+            this.customerWarehouseEditPage.Size = new System.Drawing.Size(1571, 830);
+            this.customerWarehouseEditPage.TabIndex = 3;
+            this.customerWarehouseEditPage.Text = "Customer Warehouse Add";
+            this.customerWarehouseEditPage.UseVisualStyleBackColor = true;
+            // 
+            // panel14
+            // 
+            this.panel14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.panel14.Controls.Add(this.custamizedButton4);
+            this.panel14.Controls.Add(this.saveWarehouseToCustomerBtn);
+            this.panel14.Controls.Add(this.panel16);
+            this.panel14.Controls.Add(this.panel17);
+            this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel14.Location = new System.Drawing.Point(0, 0);
+            this.panel14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1571, 830);
+            this.panel14.TabIndex = 26;
+            // 
+            // custamizedButton4
+            // 
+            this.custamizedButton4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.custamizedButton4.BackColor = System.Drawing.Color.LightSlateGray;
+            this.custamizedButton4.BackgroundColor = System.Drawing.Color.LightSlateGray;
+            this.custamizedButton4.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.custamizedButton4.BorderRadius = 7;
+            this.custamizedButton4.BorderSize = 0;
+            this.custamizedButton4.FlatAppearance.BorderSize = 0;
+            this.custamizedButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.custamizedButton4.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.custamizedButton4.ForeColor = System.Drawing.Color.White;
+            this.custamizedButton4.Location = new System.Drawing.Point(875, 661);
+            this.custamizedButton4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.custamizedButton4.Name = "custamizedButton4";
+            this.custamizedButton4.Size = new System.Drawing.Size(222, 80);
+            this.custamizedButton4.TabIndex = 7;
+            this.custamizedButton4.Text = "Back";
+            this.custamizedButton4.TextColor = System.Drawing.Color.White;
+            this.custamizedButton4.UseVisualStyleBackColor = false;
+            this.custamizedButton4.Click += new System.EventHandler(this.BackToCustomerWarehouseBtn_Click);
+            // 
+            // saveWarehouseToCustomerBtn
+            // 
+            this.saveWarehouseToCustomerBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.saveWarehouseToCustomerBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.saveWarehouseToCustomerBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.saveWarehouseToCustomerBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.saveWarehouseToCustomerBtn.BorderRadius = 7;
+            this.saveWarehouseToCustomerBtn.BorderSize = 0;
+            this.saveWarehouseToCustomerBtn.FlatAppearance.BorderSize = 0;
+            this.saveWarehouseToCustomerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveWarehouseToCustomerBtn.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.saveWarehouseToCustomerBtn.ForeColor = System.Drawing.Color.White;
+            this.saveWarehouseToCustomerBtn.Location = new System.Drawing.Point(1155, 661);
+            this.saveWarehouseToCustomerBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.saveWarehouseToCustomerBtn.Name = "saveWarehouseToCustomerBtn";
+            this.saveWarehouseToCustomerBtn.Size = new System.Drawing.Size(222, 80);
+            this.saveWarehouseToCustomerBtn.TabIndex = 5;
+            this.saveWarehouseToCustomerBtn.Text = "Save";
+            this.saveWarehouseToCustomerBtn.TextColor = System.Drawing.Color.White;
+            this.saveWarehouseToCustomerBtn.UseVisualStyleBackColor = false;
+            this.saveWarehouseToCustomerBtn.Click += new System.EventHandler(this.SaveItemToSupllierWarehouses);
+            // 
+            // panel16
+            // 
+            this.panel16.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel16.Controls.Add(this.warehouseNameComboBox1);
+            this.panel16.Controls.Add(this.warehouseNameLbl);
+            this.panel16.Location = new System.Drawing.Point(88, 420);
+            this.panel16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel16.Name = "panel16";
+            this.panel16.Size = new System.Drawing.Size(1370, 117);
+            this.panel16.TabIndex = 2;
+            // 
+            // warehouseNameComboBox1
+            // 
+            this.warehouseNameComboBox1.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F);
+            this.warehouseNameComboBox1.FormattingEnabled = true;
+            this.warehouseNameComboBox1.Location = new System.Drawing.Point(383, 41);
+            this.warehouseNameComboBox1.Name = "warehouseNameComboBox1";
+            this.warehouseNameComboBox1.Size = new System.Drawing.Size(918, 36);
+            this.warehouseNameComboBox1.TabIndex = 8;
+            // 
+            // warehouseNameLbl
+            // 
+            this.warehouseNameLbl.AutoSize = true;
+            this.warehouseNameLbl.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.warehouseNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.warehouseNameLbl.Location = new System.Drawing.Point(88, 49);
+            this.warehouseNameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.warehouseNameLbl.Name = "warehouseNameLbl";
+            this.warehouseNameLbl.Size = new System.Drawing.Size(191, 28);
+            this.warehouseNameLbl.TabIndex = 1;
+            this.warehouseNameLbl.Text = "Warehouse Name";
+            // 
+            // panel17
+            // 
+            this.panel17.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel17.Controls.Add(this.customerNameLbl);
+            this.panel17.Controls.Add(this.customerNameComboBox);
+            this.panel17.Location = new System.Drawing.Point(88, 223);
+            this.panel17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(1370, 117);
+            this.panel17.TabIndex = 1;
+            // 
+            // customerNameLbl
+            // 
+            this.customerNameLbl.AutoSize = true;
+            this.customerNameLbl.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.customerNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.customerNameLbl.Location = new System.Drawing.Point(88, 48);
+            this.customerNameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.customerNameLbl.Name = "customerNameLbl";
+            this.customerNameLbl.Size = new System.Drawing.Size(176, 28);
+            this.customerNameLbl.TabIndex = 1;
+            this.customerNameLbl.Text = "Customer Name";
+            // 
+            // customerNameComboBox
+            // 
+            this.customerNameComboBox.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F);
+            this.customerNameComboBox.FormattingEnabled = true;
+            this.customerNameComboBox.Location = new System.Drawing.Point(383, 45);
+            this.customerNameComboBox.Name = "customerNameComboBox";
+            this.customerNameComboBox.Size = new System.Drawing.Size(918, 36);
+            this.customerNameComboBox.TabIndex = 9;
+            // 
             // CustomersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
@@ -560,6 +899,17 @@
             this.panel4.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.customerWarehousePage.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.customerWarehousesDataGridView)).EndInit();
+            this.customerWarehouseEditPage.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
+            this.panel16.ResumeLayout(false);
+            this.panel16.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -599,5 +949,26 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtCustomerPhone;
         private System.Windows.Forms.Label CustomerPhoneLabel;
+        private System.Windows.Forms.TabPage customerWarehousePage;
+        private System.Windows.Forms.TabPage customerWarehouseEditPage;
+        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.ComboBox CustomerComboBox;
+        private RJCodeAdvance.RJControls.RJComboBox warehouseCustomerComboBox1;
+        private CustamizedButton editCustomerWarehouseButton;
+        private CustamizedButton deleteCustomerWarehouseButton;
+        private CustamizedButton addCustomerWarehouseButton;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.TextBox searchCustomerWarehousetextBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridView customerWarehousesDataGridView;
+        private System.Windows.Forms.Panel panel14;
+        private CustamizedButton custamizedButton4;
+        private CustamizedButton saveWarehouseToCustomerBtn;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.ComboBox warehouseNameComboBox1;
+        private System.Windows.Forms.Label warehouseNameLbl;
+        private System.Windows.Forms.Panel panel17;
+        private System.Windows.Forms.Label customerNameLbl;
+        private System.Windows.Forms.ComboBox customerNameComboBox;
     }
 }

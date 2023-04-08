@@ -14,18 +14,24 @@ namespace WarehouseManagement
     
     public partial class Transfer
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Transfer()
+        {
+            this.TransferItems = new HashSet<TransferItem>();
+        }
+    
         public int TransferID { get; set; }
         public int FromWarehouseID { get; set; }
         public int ToWarehouseID { get; set; }
-        public int ItemID { get; set; }
-        public int Quantity { get; set; }
         public int SupplierID { get; set; }
-        public System.DateTime ProductionDate { get; set; }
-        public System.DateTime ExpirationDate { get; set; }
+        public string Status { get; set; }
     
-        public virtual Item Item { get; set; }
         public virtual Supplier Supplier { get; set; }
+        public virtual Supplier Supplier1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TransferItem> TransferItems { get; set; }
         public virtual Warehouse Warehouse { get; set; }
         public virtual Warehouse Warehouse1 { get; set; }
+        public virtual Warehouse Warehouse2 { get; set; }
     }
 }

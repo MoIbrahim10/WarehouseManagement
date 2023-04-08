@@ -19,8 +19,8 @@ namespace WarehouseManagement
         {
             this.IssuanceOrderItems = new HashSet<IssuanceOrderItem>();
             this.SupplyOrderItems = new HashSet<SupplyOrderItem>();
-            this.Transfers = new HashSet<Transfer>();
             this.ItemSuppliers = new HashSet<ItemSupplier>();
+            this.TransferItems = new HashSet<TransferItem>();
             this.WarehouseItems = new HashSet<WarehouseItem>();
         }
     
@@ -34,9 +34,9 @@ namespace WarehouseManagement
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SupplyOrderItem> SupplyOrderItems { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Transfer> Transfers { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ItemSupplier> ItemSuppliers { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TransferItem> TransferItems { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<WarehouseItem> WarehouseItems { get; set; }
     }
