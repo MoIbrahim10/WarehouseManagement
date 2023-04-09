@@ -5,16 +5,29 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WarehouseManagement", "WarehouseManagement\WarehouseManagement.csproj", "{8B8F5DEB-C715-4612-9187-28BCAEB8D65C}"
 EndProject
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "warehouseSystemReports", "warehouseSystemReports\warehouseSystemReports.rptproj", "{6AED6F11-5A95-41FA-914E-1BBF4171F388}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		DebugLocal|Any CPU = DebugLocal|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{8B8F5DEB-C715-4612-9187-28BCAEB8D65C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8B8F5DEB-C715-4612-9187-28BCAEB8D65C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B8F5DEB-C715-4612-9187-28BCAEB8D65C}.DebugLocal|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B8F5DEB-C715-4612-9187-28BCAEB8D65C}.DebugLocal|Any CPU.Build.0 = Debug|Any CPU
 		{8B8F5DEB-C715-4612-9187-28BCAEB8D65C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8B8F5DEB-C715-4612-9187-28BCAEB8D65C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AED6F11-5A95-41FA-914E-1BBF4171F388}.Debug|Any CPU.ActiveCfg = Debug
+		{6AED6F11-5A95-41FA-914E-1BBF4171F388}.Debug|Any CPU.Build.0 = Debug
+		{6AED6F11-5A95-41FA-914E-1BBF4171F388}.Debug|Any CPU.Deploy.0 = Debug
+		{6AED6F11-5A95-41FA-914E-1BBF4171F388}.DebugLocal|Any CPU.ActiveCfg = DebugLocal
+		{6AED6F11-5A95-41FA-914E-1BBF4171F388}.DebugLocal|Any CPU.Build.0 = DebugLocal
+		{6AED6F11-5A95-41FA-914E-1BBF4171F388}.Release|Any CPU.ActiveCfg = Release
+		{6AED6F11-5A95-41FA-914E-1BBF4171F388}.Release|Any CPU.Build.0 = Release
+		{6AED6F11-5A95-41FA-914E-1BBF4171F388}.Release|Any CPU.Deploy.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

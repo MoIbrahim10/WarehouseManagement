@@ -11,7 +11,7 @@ namespace WarehouseManagement
 {
     using System;
     using System.Collections.Generic;
-    
+
     public partial class IssuanceOrder
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,17 +19,23 @@ namespace WarehouseManagement
         {
             this.IssuanceOrderItems = new HashSet<IssuanceOrderItem>();
         }
-    
+
         public int IssuanceOrderID { get; set; }
         public int WarehouseID { get; set; }
         public int OrderNumber { get; set; }
         public System.DateTime OrderDate { get; set; }
         public int SupplierID { get; set; }
         public string Status { get; set; }
-    
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<IssuanceOrderItem> IssuanceOrderItems { get; set; }
         public virtual Supplier Supplier { get; set; }
         public virtual Warehouse Warehouse { get; set; }
+
+        public string DisplayText
+        {
+            get { return "Order" + OrderNumber + "-" + OrderDate.ToString("d") + "_" + Warehouse.WarehouseName; }
+        }
+
     }
 }

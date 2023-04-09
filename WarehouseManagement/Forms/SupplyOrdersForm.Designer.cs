@@ -38,58 +38,68 @@
             this.supplyOrderDataGrid = new System.Windows.Forms.DataGridView();
             this.SupplyOrdersAddEditPage = new System.Windows.Forms.TabPage();
             this.addWarehousPanel = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.orderDatePicker = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.orderDateLbl = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.suppliersComboBox = new System.Windows.Forms.ComboBox();
+            this.supplierNameLbl = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.warehousesComboBox = new System.Windows.Forms.ComboBox();
+            this.warehouseNameLbl = new System.Windows.Forms.Label();
+            this.supplyItemsDataGridView = new System.Windows.Forms.DataGridView();
             this.itemsListPage = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.rjComboBox1 = new RJCodeAdvance.RJControls.RJComboBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.SupplyOrderComboBox = new System.Windows.Forms.ComboBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.searchSupplyOrderItemTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.selectedItemCombobox = new RJCodeAdvance.RJControls.RJComboBox();
+            this.SupplyItemsDtaGridView = new System.Windows.Forms.DataGridView();
             this.itemAddEditPage = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.notInListItemsLabel = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
+            this.quantityTextBox = new System.Windows.Forms.TextBox();
+            this.itemQuantityLbl = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.expirationDateDatePicker = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.expirationDatelabel = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.productionDateDatePicker = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.productionDatelabel = new System.Windows.Forms.Label();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.itemNameComboBox = new System.Windows.Forms.ComboBox();
+            this.itemNameLbl = new System.Windows.Forms.Label();
+            this.addNewItemPage = new System.Windows.Forms.TabPage();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.txtItemUnit = new System.Windows.Forms.TextBox();
+            this.itemUnitLabel = new System.Windows.Forms.Label();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.txtItemName = new System.Windows.Forms.TextBox();
+            this.ItemNameLabel = new System.Windows.Forms.Label();
+            this.ItemID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductionDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExpirationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.viewItemsButton = new WarehouseManagement.CustamizedButton();
             this.editSupplyOrderButton = new WarehouseManagement.CustamizedButton();
             this.deleteSupplyOrderButton = new WarehouseManagement.CustamizedButton();
             this.AddSupplyOrderButton = new WarehouseManagement.CustamizedButton();
+            this.addItemInSupplyPageBtn = new WarehouseManagement.CustamizedButton();
             this.backBtn = new WarehouseManagement.CustamizedButton();
             this.AddEditSupplyOrderBtn = new WarehouseManagement.CustamizedButton();
+            this.backToSupplyOrdersBtn = new WarehouseManagement.CustamizedButton();
             this.editItemToSupplyBtn = new WarehouseManagement.CustamizedButton();
             this.deleteItemToSupplyBtn = new WarehouseManagement.CustamizedButton();
             this.addItemToSupplyBtn = new WarehouseManagement.CustamizedButton();
-            this.custamizedButton1 = new WarehouseManagement.CustamizedButton();
-            this.custamizedButton2 = new WarehouseManagement.CustamizedButton();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Item = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ProductionDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ExpirationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.warehouseNameLbl = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.supplierNameLbl = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.orderDateLbl = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.rjDatePicker1 = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.addNewItem = new WarehouseManagement.CustamizedButton();
+            this.BackToSupplyItemBtn = new WarehouseManagement.CustamizedButton();
+            this.saveItemToSupplyBtn = new WarehouseManagement.CustamizedButton();
+            this.backToItemPage = new WarehouseManagement.CustamizedButton();
+            this.AddNewItemBtn = new WarehouseManagement.CustamizedButton();
             this.tabControl1.SuspendLayout();
             this.SupplyOrdersListPage.SuspendLayout();
             this.supplyOrderMainPanel.SuspendLayout();
@@ -97,22 +107,24 @@
             ((System.ComponentModel.ISupportInitialize)(this.supplyOrderDataGrid)).BeginInit();
             this.SupplyOrdersAddEditPage.SuspendLayout();
             this.addWarehousPanel.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supplyItemsDataGridView)).BeginInit();
             this.itemsListPage.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SupplyItemsDtaGridView)).BeginInit();
             this.itemAddEditPage.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel10.SuspendLayout();
             this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
+            this.addNewItemPage.SuspendLayout();
+            this.panel8.SuspendLayout();
+            this.panel10.SuspendLayout();
+            this.panel12.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -122,6 +134,7 @@
             this.tabControl1.Controls.Add(this.SupplyOrdersAddEditPage);
             this.tabControl1.Controls.Add(this.itemsListPage);
             this.tabControl1.Controls.Add(this.itemAddEditPage);
+            this.tabControl1.Controls.Add(this.addNewItemPage);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Font = new System.Drawing.Font("Verdana Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.ItemSize = new System.Drawing.Size(180, 40);
@@ -246,10 +259,11 @@
             // 
             // addWarehousPanel
             // 
+            this.addWarehousPanel.Controls.Add(this.addItemInSupplyPageBtn);
             this.addWarehousPanel.Controls.Add(this.panel2);
             this.addWarehousPanel.Controls.Add(this.panel1);
             this.addWarehousPanel.Controls.Add(this.panel3);
-            this.addWarehousPanel.Controls.Add(this.dataGridView2);
+            this.addWarehousPanel.Controls.Add(this.supplyItemsDataGridView);
             this.addWarehousPanel.Controls.Add(this.backBtn);
             this.addWarehousPanel.Controls.Add(this.AddEditSupplyOrderBtn);
             this.addWarehousPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -258,6 +272,125 @@
             this.addWarehousPanel.Name = "addWarehousPanel";
             this.addWarehousPanel.Size = new System.Drawing.Size(1563, 820);
             this.addWarehousPanel.TabIndex = 23;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.orderDatePicker);
+            this.panel2.Controls.Add(this.orderDateLbl);
+            this.panel2.Location = new System.Drawing.Point(1113, 55);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(329, 191);
+            this.panel2.TabIndex = 10;
+            // 
+            // orderDatePicker
+            // 
+            this.orderDatePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.orderDatePicker.BorderSize = 0;
+            this.orderDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.orderDatePicker.Location = new System.Drawing.Point(51, 109);
+            this.orderDatePicker.MinimumSize = new System.Drawing.Size(4, 35);
+            this.orderDatePicker.Name = "orderDatePicker";
+            this.orderDatePicker.Size = new System.Drawing.Size(232, 35);
+            this.orderDatePicker.SkinColor = System.Drawing.Color.Thistle;
+            this.orderDatePicker.TabIndex = 11;
+            this.orderDatePicker.TextColor = System.Drawing.Color.White;
+            // 
+            // orderDateLbl
+            // 
+            this.orderDateLbl.AutoSize = true;
+            this.orderDateLbl.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderDateLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.orderDateLbl.Location = new System.Drawing.Point(46, 48);
+            this.orderDateLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.orderDateLbl.Name = "orderDateLbl";
+            this.orderDateLbl.Size = new System.Drawing.Size(124, 28);
+            this.orderDateLbl.TabIndex = 3;
+            this.orderDateLbl.Text = "Order Date";
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel1.Controls.Add(this.suppliersComboBox);
+            this.panel1.Controls.Add(this.supplierNameLbl);
+            this.panel1.Location = new System.Drawing.Point(592, 55);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(329, 191);
+            this.panel1.TabIndex = 5;
+            // 
+            // suppliersComboBox
+            // 
+            this.suppliersComboBox.FormattingEnabled = true;
+            this.suppliersComboBox.Location = new System.Drawing.Point(51, 109);
+            this.suppliersComboBox.Name = "suppliersComboBox";
+            this.suppliersComboBox.Size = new System.Drawing.Size(228, 33);
+            this.suppliersComboBox.TabIndex = 4;
+            // 
+            // supplierNameLbl
+            // 
+            this.supplierNameLbl.AutoSize = true;
+            this.supplierNameLbl.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supplierNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.supplierNameLbl.Location = new System.Drawing.Point(46, 48);
+            this.supplierNameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.supplierNameLbl.Name = "supplierNameLbl";
+            this.supplierNameLbl.Size = new System.Drawing.Size(164, 28);
+            this.supplierNameLbl.TabIndex = 1;
+            this.supplierNameLbl.Text = "Supplier Name";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.Controls.Add(this.warehousesComboBox);
+            this.panel3.Controls.Add(this.warehouseNameLbl);
+            this.panel3.Location = new System.Drawing.Point(72, 55);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(329, 191);
+            this.panel3.TabIndex = 4;
+            // 
+            // warehousesComboBox
+            // 
+            this.warehousesComboBox.FormattingEnabled = true;
+            this.warehousesComboBox.Location = new System.Drawing.Point(51, 109);
+            this.warehousesComboBox.Name = "warehousesComboBox";
+            this.warehousesComboBox.Size = new System.Drawing.Size(228, 33);
+            this.warehousesComboBox.TabIndex = 3;
+            // 
+            // warehouseNameLbl
+            // 
+            this.warehouseNameLbl.AutoSize = true;
+            this.warehouseNameLbl.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.warehouseNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.warehouseNameLbl.Location = new System.Drawing.Point(46, 48);
+            this.warehouseNameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.warehouseNameLbl.Name = "warehouseNameLbl";
+            this.warehouseNameLbl.Size = new System.Drawing.Size(191, 28);
+            this.warehouseNameLbl.TabIndex = 1;
+            this.warehouseNameLbl.Text = "Warehouse Name";
+            // 
+            // supplyItemsDataGridView
+            // 
+            this.supplyItemsDataGridView.AllowUserToAddRows = false;
+            this.supplyItemsDataGridView.AllowUserToResizeColumns = false;
+            this.supplyItemsDataGridView.AllowUserToResizeRows = false;
+            this.supplyItemsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.supplyItemsDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.supplyItemsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.supplyItemsDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ItemID,
+            this.ItemName,
+            this.Quantity,
+            this.ProductionDate,
+            this.ExpirationDate});
+            this.supplyItemsDataGridView.Location = new System.Drawing.Point(72, 296);
+            this.supplyItemsDataGridView.Name = "supplyItemsDataGridView";
+            this.supplyItemsDataGridView.RowHeadersWidth = 51;
+            this.supplyItemsDataGridView.RowTemplate.Height = 24;
+            this.supplyItemsDataGridView.Size = new System.Drawing.Size(1161, 316);
+            this.supplyItemsDataGridView.TabIndex = 9;
             // 
             // itemsListPage
             // 
@@ -268,16 +401,19 @@
             this.itemsListPage.TabIndex = 2;
             this.itemsListPage.Text = "Items List";
             this.itemsListPage.UseVisualStyleBackColor = true;
+            this.itemsListPage.Enter += new System.EventHandler(this.ItemsListPage_Enter);
             // 
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.panel7.Controls.Add(this.rjComboBox1);
+            this.panel7.Controls.Add(this.backToSupplyOrdersBtn);
+            this.panel7.Controls.Add(this.SupplyOrderComboBox);
+            this.panel7.Controls.Add(this.panel4);
+            this.panel7.Controls.Add(this.selectedItemCombobox);
             this.panel7.Controls.Add(this.editItemToSupplyBtn);
             this.panel7.Controls.Add(this.deleteItemToSupplyBtn);
             this.panel7.Controls.Add(this.addItemToSupplyBtn);
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Controls.Add(this.dataGridView1);
+            this.panel7.Controls.Add(this.SupplyItemsDtaGridView);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -285,45 +421,35 @@
             this.panel7.Size = new System.Drawing.Size(1571, 830);
             this.panel7.TabIndex = 7;
             // 
-            // rjComboBox1
+            // SupplyOrderComboBox
             // 
-            this.rjComboBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.rjComboBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.rjComboBox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjComboBox1.BorderSize = 1;
-            this.rjComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.rjComboBox1.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
-            this.rjComboBox1.ForeColor = System.Drawing.Color.DimGray;
-            this.rjComboBox1.IconColor = System.Drawing.Color.MediumSlateBlue;
-            this.rjComboBox1.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
-            this.rjComboBox1.ListTextColor = System.Drawing.Color.DimGray;
-            this.rjComboBox1.Location = new System.Drawing.Point(1175, 111);
-            this.rjComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.rjComboBox1.MinimumSize = new System.Drawing.Size(250, 47);
-            this.rjComboBox1.Name = "rjComboBox1";
-            this.rjComboBox1.Padding = new System.Windows.Forms.Padding(1, 2, 1, 2);
-            this.rjComboBox1.Size = new System.Drawing.Size(324, 47);
-            this.rjComboBox1.TabIndex = 18;
-            this.rjComboBox1.Texts = "";
+            this.SupplyOrderComboBox.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SupplyOrderComboBox.FormattingEnabled = true;
+            this.SupplyOrderComboBox.Location = new System.Drawing.Point(121, 122);
+            this.SupplyOrderComboBox.Name = "SupplyOrderComboBox";
+            this.SupplyOrderComboBox.Size = new System.Drawing.Size(324, 36);
+            this.SupplyOrderComboBox.TabIndex = 22;
+            this.SupplyOrderComboBox.SelectedIndexChanged += new System.EventHandler(this.SupplyOrderComboBox_SelectedIndexChanged);
             // 
-            // panel8
+            // panel4
             // 
-            this.panel8.Controls.Add(this.textBox2);
-            this.panel8.Controls.Add(this.label2);
-            this.panel8.Location = new System.Drawing.Point(121, 66);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(1011, 156);
-            this.panel8.TabIndex = 14;
+            this.panel4.Controls.Add(this.searchSupplyOrderItemTextBox);
+            this.panel4.Controls.Add(this.label2);
+            this.panel4.Location = new System.Drawing.Point(519, 66);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(613, 156);
+            this.panel4.TabIndex = 21;
             // 
-            // textBox2
+            // searchSupplyOrderItemTextBox
             // 
-            this.textBox2.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
-            this.textBox2.Location = new System.Drawing.Point(224, 52);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(720, 35);
-            this.textBox2.TabIndex = 20;
+            this.searchSupplyOrderItemTextBox.Font = new System.Drawing.Font("Verdana Pro", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.searchSupplyOrderItemTextBox.Location = new System.Drawing.Point(224, 52);
+            this.searchSupplyOrderItemTextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.searchSupplyOrderItemTextBox.Name = "searchSupplyOrderItemTextBox";
+            this.searchSupplyOrderItemTextBox.Size = new System.Drawing.Size(288, 35);
+            this.searchSupplyOrderItemTextBox.TabIndex = 20;
+            this.searchSupplyOrderItemTextBox.TextChanged += new System.EventHandler(this.SearchSupplierItemtextBox_TextChanged);
             // 
             // label2
             // 
@@ -337,21 +463,43 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Search";
             // 
-            // dataGridView1
+            // selectedItemCombobox
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(121, 267);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1011, 486);
-            this.dataGridView1.TabIndex = 6;
+            this.selectedItemCombobox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.selectedItemCombobox.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.selectedItemCombobox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.selectedItemCombobox.BorderSize = 1;
+            this.selectedItemCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.selectedItemCombobox.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
+            this.selectedItemCombobox.ForeColor = System.Drawing.Color.DimGray;
+            this.selectedItemCombobox.IconColor = System.Drawing.Color.MediumSlateBlue;
+            this.selectedItemCombobox.ListBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(228)))), ((int)(((byte)(245)))));
+            this.selectedItemCombobox.ListTextColor = System.Drawing.Color.DimGray;
+            this.selectedItemCombobox.Location = new System.Drawing.Point(1175, 111);
+            this.selectedItemCombobox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.selectedItemCombobox.MinimumSize = new System.Drawing.Size(250, 47);
+            this.selectedItemCombobox.Name = "selectedItemCombobox";
+            this.selectedItemCombobox.Padding = new System.Windows.Forms.Padding(1, 2, 1, 2);
+            this.selectedItemCombobox.Size = new System.Drawing.Size(324, 47);
+            this.selectedItemCombobox.TabIndex = 18;
+            this.selectedItemCombobox.Texts = "";
+            // 
+            // SupplyItemsDtaGridView
+            // 
+            this.SupplyItemsDtaGridView.AllowUserToAddRows = false;
+            this.SupplyItemsDtaGridView.AllowUserToDeleteRows = false;
+            this.SupplyItemsDtaGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.SupplyItemsDtaGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.SupplyItemsDtaGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.SupplyItemsDtaGridView.Location = new System.Drawing.Point(121, 267);
+            this.SupplyItemsDtaGridView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SupplyItemsDtaGridView.Name = "SupplyItemsDtaGridView";
+            this.SupplyItemsDtaGridView.ReadOnly = true;
+            this.SupplyItemsDtaGridView.RowHeadersWidth = 51;
+            this.SupplyItemsDtaGridView.RowTemplate.Height = 24;
+            this.SupplyItemsDtaGridView.Size = new System.Drawing.Size(1011, 486);
+            this.SupplyItemsDtaGridView.TabIndex = 6;
+            this.SupplyItemsDtaGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.SupplyItemsDataGrid_CellClick);
             // 
             // itemAddEditPage
             // 
@@ -366,13 +514,13 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.panel9.Controls.Add(this.panel10);
+            this.panel9.Controls.Add(this.addNewItem);
+            this.panel9.Controls.Add(this.notInListItemsLabel);
             this.panel9.Controls.Add(this.panel11);
-            this.panel9.Controls.Add(this.panel12);
-            this.panel9.Controls.Add(this.panel13);
-            this.panel9.Controls.Add(this.panel14);
-            this.panel9.Controls.Add(this.custamizedButton1);
-            this.panel9.Controls.Add(this.custamizedButton2);
+            this.panel9.Controls.Add(this.panel6);
+            this.panel9.Controls.Add(this.panel5);
+            this.panel9.Controls.Add(this.BackToSupplyItemBtn);
+            this.panel9.Controls.Add(this.saveItemToSupplyBtn);
             this.panel9.Controls.Add(this.panel15);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(0, 0);
@@ -381,197 +529,273 @@
             this.panel9.Size = new System.Drawing.Size(1571, 830);
             this.panel9.TabIndex = 24;
             // 
-            // panel10
+            // notInListItemsLabel
             // 
-            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel10.Controls.Add(this.textBox3);
-            this.panel10.Controls.Add(this.label3);
-            this.panel10.Location = new System.Drawing.Point(828, 100);
-            this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(618, 128);
-            this.panel10.TabIndex = 3;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
-            this.textBox3.Location = new System.Drawing.Point(351, 45);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(216, 35);
-            this.textBox3.TabIndex = 2;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.label3.Location = new System.Drawing.Point(46, 48);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(164, 28);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Supplier Name";
+            this.notInListItemsLabel.AutoSize = true;
+            this.notInListItemsLabel.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.notInListItemsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.notInListItemsLabel.Location = new System.Drawing.Point(1112, 100);
+            this.notInListItemsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.notInListItemsLabel.Name = "notInListItemsLabel";
+            this.notInListItemsLabel.Size = new System.Drawing.Size(173, 28);
+            this.notInListItemsLabel.TabIndex = 15;
+            this.notInListItemsLabel.Text = "Not in the list? ";
             // 
             // panel11
             // 
             this.panel11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel11.Controls.Add(this.textBox4);
-            this.panel11.Controls.Add(this.label4);
-            this.panel11.Location = new System.Drawing.Point(833, 486);
+            this.panel11.Controls.Add(this.quantityTextBox);
+            this.panel11.Controls.Add(this.itemQuantityLbl);
+            this.panel11.Location = new System.Drawing.Point(76, 312);
             this.panel11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(613, 128);
-            this.panel11.TabIndex = 5;
+            this.panel11.Size = new System.Drawing.Size(329, 191);
+            this.panel11.TabIndex = 14;
             // 
-            // textBox4
+            // quantityTextBox
             // 
-            this.textBox4.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
-            this.textBox4.Location = new System.Drawing.Point(351, 45);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(216, 35);
-            this.textBox4.TabIndex = 2;
+            this.quantityTextBox.Location = new System.Drawing.Point(51, 109);
+            this.quantityTextBox.Name = "quantityTextBox";
+            this.quantityTextBox.Size = new System.Drawing.Size(237, 32);
+            this.quantityTextBox.TabIndex = 16;
             // 
-            // label4
+            // itemQuantityLbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.label4.Location = new System.Drawing.Point(46, 48);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(186, 28);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Supplier Website";
+            this.itemQuantityLbl.AutoSize = true;
+            this.itemQuantityLbl.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemQuantityLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.itemQuantityLbl.Location = new System.Drawing.Point(46, 48);
+            this.itemQuantityLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.itemQuantityLbl.Name = "itemQuantityLbl";
+            this.itemQuantityLbl.Size = new System.Drawing.Size(158, 28);
+            this.itemQuantityLbl.TabIndex = 1;
+            this.itemQuantityLbl.Text = "Item Quantity";
             // 
-            // panel12
+            // panel6
             // 
-            this.panel12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel12.Controls.Add(this.textBox5);
-            this.panel12.Controls.Add(this.label5);
-            this.panel12.Location = new System.Drawing.Point(76, 486);
-            this.panel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(618, 128);
-            this.panel12.TabIndex = 4;
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel6.Controls.Add(this.expirationDateDatePicker);
+            this.panel6.Controls.Add(this.expirationDatelabel);
+            this.panel6.Location = new System.Drawing.Point(1117, 312);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(329, 191);
+            this.panel6.TabIndex = 12;
             // 
-            // textBox5
+            // expirationDateDatePicker
             // 
-            this.textBox5.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
-            this.textBox5.Location = new System.Drawing.Point(351, 45);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(216, 35);
-            this.textBox5.TabIndex = 2;
+            this.expirationDateDatePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.expirationDateDatePicker.BorderSize = 0;
+            this.expirationDateDatePicker.Font = new System.Drawing.Font("Verdana Pro Cond", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expirationDateDatePicker.Location = new System.Drawing.Point(51, 109);
+            this.expirationDateDatePicker.MinimumSize = new System.Drawing.Size(4, 35);
+            this.expirationDateDatePicker.Name = "expirationDateDatePicker";
+            this.expirationDateDatePicker.Size = new System.Drawing.Size(232, 35);
+            this.expirationDateDatePicker.SkinColor = System.Drawing.Color.Thistle;
+            this.expirationDateDatePicker.TabIndex = 11;
+            this.expirationDateDatePicker.TextColor = System.Drawing.Color.White;
             // 
-            // label5
+            // expirationDatelabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.label5.Location = new System.Drawing.Point(46, 48);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(140, 28);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Supplier Fax";
+            this.expirationDatelabel.AutoSize = true;
+            this.expirationDatelabel.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expirationDatelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.expirationDatelabel.Location = new System.Drawing.Point(46, 48);
+            this.expirationDatelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.expirationDatelabel.Name = "expirationDatelabel";
+            this.expirationDatelabel.Size = new System.Drawing.Size(172, 28);
+            this.expirationDatelabel.TabIndex = 3;
+            this.expirationDatelabel.Text = "Expiration Date";
             // 
-            // panel13
+            // panel5
             // 
-            this.panel13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel13.Controls.Add(this.textBox6);
-            this.panel13.Controls.Add(this.label6);
-            this.panel13.Location = new System.Drawing.Point(833, 293);
-            this.panel13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(613, 132);
-            this.panel13.TabIndex = 8;
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel5.Controls.Add(this.productionDateDatePicker);
+            this.panel5.Controls.Add(this.productionDatelabel);
+            this.panel5.Location = new System.Drawing.Point(602, 312);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(329, 191);
+            this.panel5.TabIndex = 11;
             // 
-            // textBox6
+            // productionDateDatePicker
             // 
-            this.textBox6.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
-            this.textBox6.Location = new System.Drawing.Point(351, 45);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(216, 35);
-            this.textBox6.TabIndex = 2;
+            this.productionDateDatePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.productionDateDatePicker.BorderSize = 0;
+            this.productionDateDatePicker.Font = new System.Drawing.Font("Verdana Pro Cond", 10.2F);
+            this.productionDateDatePicker.Location = new System.Drawing.Point(51, 109);
+            this.productionDateDatePicker.MinimumSize = new System.Drawing.Size(4, 35);
+            this.productionDateDatePicker.Name = "productionDateDatePicker";
+            this.productionDateDatePicker.Size = new System.Drawing.Size(232, 35);
+            this.productionDateDatePicker.SkinColor = System.Drawing.Color.Thistle;
+            this.productionDateDatePicker.TabIndex = 11;
+            this.productionDateDatePicker.TextColor = System.Drawing.Color.White;
             // 
-            // label6
+            // productionDatelabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.label6.Location = new System.Drawing.Point(46, 48);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(174, 28);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Supplier Mobile";
-            // 
-            // panel14
-            // 
-            this.panel14.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel14.Controls.Add(this.textBox7);
-            this.panel14.Controls.Add(this.label7);
-            this.panel14.Location = new System.Drawing.Point(76, 293);
-            this.panel14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(618, 132);
-            this.panel14.TabIndex = 7;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
-            this.textBox7.Location = new System.Drawing.Point(351, 45);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(216, 35);
-            this.textBox7.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.label7.Location = new System.Drawing.Point(46, 48);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(169, 28);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "Supplier Phone";
+            this.productionDatelabel.AutoSize = true;
+            this.productionDatelabel.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.productionDatelabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.productionDatelabel.Location = new System.Drawing.Point(46, 48);
+            this.productionDatelabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.productionDatelabel.Name = "productionDatelabel";
+            this.productionDatelabel.Size = new System.Drawing.Size(179, 28);
+            this.productionDatelabel.TabIndex = 3;
+            this.productionDatelabel.Text = "Production Date";
             // 
             // panel15
             // 
             this.panel15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel15.Controls.Add(this.textBox8);
-            this.panel15.Controls.Add(this.label8);
+            this.panel15.Controls.Add(this.itemNameComboBox);
+            this.panel15.Controls.Add(this.itemNameLbl);
             this.panel15.Location = new System.Drawing.Point(76, 100);
             this.panel15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(618, 128);
+            this.panel15.Size = new System.Drawing.Size(855, 128);
             this.panel15.TabIndex = 1;
             // 
-            // textBox8
+            // itemNameComboBox
             // 
-            this.textBox8.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
-            this.textBox8.Location = new System.Drawing.Point(351, 45);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(216, 35);
-            this.textBox8.TabIndex = 2;
+            this.itemNameComboBox.FormattingEnabled = true;
+            this.itemNameComboBox.Location = new System.Drawing.Point(221, 48);
+            this.itemNameComboBox.Name = "itemNameComboBox";
+            this.itemNameComboBox.Size = new System.Drawing.Size(588, 33);
+            this.itemNameComboBox.TabIndex = 18;
             // 
-            // label8
+            // itemNameLbl
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.label8.Location = new System.Drawing.Point(46, 48);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(164, 28);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Supplier Name";
+            this.itemNameLbl.AutoSize = true;
+            this.itemNameLbl.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.itemNameLbl.Location = new System.Drawing.Point(46, 48);
+            this.itemNameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.itemNameLbl.Name = "itemNameLbl";
+            this.itemNameLbl.Size = new System.Drawing.Size(128, 28);
+            this.itemNameLbl.TabIndex = 1;
+            this.itemNameLbl.Text = "Item Name";
+            // 
+            // addNewItemPage
+            // 
+            this.addNewItemPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.addNewItemPage.Controls.Add(this.panel8);
+            this.addNewItemPage.Location = new System.Drawing.Point(4, 44);
+            this.addNewItemPage.Name = "addNewItemPage";
+            this.addNewItemPage.Size = new System.Drawing.Size(1571, 830);
+            this.addNewItemPage.TabIndex = 4;
+            this.addNewItemPage.Text = "Add new Item";
+            // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.backToItemPage);
+            this.panel8.Controls.Add(this.AddNewItemBtn);
+            this.panel8.Controls.Add(this.panel10);
+            this.panel8.Controls.Add(this.panel12);
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(1571, 830);
+            this.panel8.TabIndex = 24;
+            // 
+            // panel10
+            // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel10.Controls.Add(this.txtItemUnit);
+            this.panel10.Controls.Add(this.itemUnitLabel);
+            this.panel10.Location = new System.Drawing.Point(91, 382);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(1370, 117);
+            this.panel10.TabIndex = 2;
+            // 
+            // txtItemUnit
+            // 
+            this.txtItemUnit.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
+            this.txtItemUnit.Location = new System.Drawing.Point(383, 49);
+            this.txtItemUnit.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtItemUnit.Name = "txtItemUnit";
+            this.txtItemUnit.Size = new System.Drawing.Size(918, 35);
+            this.txtItemUnit.TabIndex = 2;
+            // 
+            // itemUnitLabel
+            // 
+            this.itemUnitLabel.AutoSize = true;
+            this.itemUnitLabel.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.itemUnitLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.itemUnitLabel.Location = new System.Drawing.Point(88, 52);
+            this.itemUnitLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.itemUnitLabel.Name = "itemUnitLabel";
+            this.itemUnitLabel.Size = new System.Drawing.Size(112, 28);
+            this.itemUnitLabel.TabIndex = 1;
+            this.itemUnitLabel.Text = "Item Unit";
+            // 
+            // panel12
+            // 
+            this.panel12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel12.Controls.Add(this.txtItemName);
+            this.panel12.Controls.Add(this.ItemNameLabel);
+            this.panel12.Location = new System.Drawing.Point(91, 185);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(1370, 117);
+            this.panel12.TabIndex = 1;
+            // 
+            // txtItemName
+            // 
+            this.txtItemName.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
+            this.txtItemName.Location = new System.Drawing.Point(383, 45);
+            this.txtItemName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtItemName.Name = "txtItemName";
+            this.txtItemName.Size = new System.Drawing.Size(918, 35);
+            this.txtItemName.TabIndex = 2;
+            // 
+            // ItemNameLabel
+            // 
+            this.ItemNameLabel.AutoSize = true;
+            this.ItemNameLabel.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemNameLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.ItemNameLabel.Location = new System.Drawing.Point(88, 48);
+            this.ItemNameLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ItemNameLabel.Name = "ItemNameLabel";
+            this.ItemNameLabel.Size = new System.Drawing.Size(128, 28);
+            this.ItemNameLabel.TabIndex = 1;
+            this.ItemNameLabel.Text = "Item Name";
+            // 
+            // ItemID
+            // 
+            this.ItemID.HeaderText = "Item ID";
+            this.ItemID.MinimumWidth = 6;
+            this.ItemID.Name = "ItemID";
+            this.ItemID.ReadOnly = true;
+            this.ItemID.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // ItemName
+            // 
+            this.ItemName.HeaderText = "Item Name";
+            this.ItemName.MinimumWidth = 6;
+            this.ItemName.Name = "ItemName";
+            this.ItemName.ReadOnly = true;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.ReadOnly = true;
+            // 
+            // ProductionDate
+            // 
+            this.ProductionDate.HeaderText = "Production Date";
+            this.ProductionDate.MinimumWidth = 6;
+            this.ProductionDate.Name = "ProductionDate";
+            this.ProductionDate.ReadOnly = true;
+            // 
+            // ExpirationDate
+            // 
+            this.ExpirationDate.HeaderText = "Expiration Date";
+            this.ExpirationDate.MinimumWidth = 6;
+            this.ExpirationDate.Name = "ExpirationDate";
+            this.ExpirationDate.ReadOnly = true;
             // 
             // viewItemsButton
             // 
@@ -661,6 +885,28 @@
             this.AddSupplyOrderButton.UseVisualStyleBackColor = false;
             this.AddSupplyOrderButton.Click += new System.EventHandler(this.AddSupplyOrderButton_Click);
             // 
+            // addItemInSupplyPageBtn
+            // 
+            this.addItemInSupplyPageBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addItemInSupplyPageBtn.BackColor = System.Drawing.Color.LightPink;
+            this.addItemInSupplyPageBtn.BackgroundColor = System.Drawing.Color.LightPink;
+            this.addItemInSupplyPageBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.addItemInSupplyPageBtn.BorderRadius = 7;
+            this.addItemInSupplyPageBtn.BorderSize = 0;
+            this.addItemInSupplyPageBtn.FlatAppearance.BorderSize = 0;
+            this.addItemInSupplyPageBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addItemInSupplyPageBtn.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.addItemInSupplyPageBtn.ForeColor = System.Drawing.Color.White;
+            this.addItemInSupplyPageBtn.Location = new System.Drawing.Point(1274, 434);
+            this.addItemInSupplyPageBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addItemInSupplyPageBtn.Name = "addItemInSupplyPageBtn";
+            this.addItemInSupplyPageBtn.Size = new System.Drawing.Size(168, 66);
+            this.addItemInSupplyPageBtn.TabIndex = 18;
+            this.addItemInSupplyPageBtn.Text = "Add Item";
+            this.addItemInSupplyPageBtn.TextColor = System.Drawing.Color.White;
+            this.addItemInSupplyPageBtn.UseVisualStyleBackColor = false;
+            this.addItemInSupplyPageBtn.Click += new System.EventHandler(this.AddItemInSupplyPageBtn_Click);
+            // 
             // backBtn
             // 
             this.backBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -703,6 +949,29 @@
             this.AddEditSupplyOrderBtn.Text = "Save";
             this.AddEditSupplyOrderBtn.TextColor = System.Drawing.Color.White;
             this.AddEditSupplyOrderBtn.UseVisualStyleBackColor = false;
+            this.AddEditSupplyOrderBtn.Click += new System.EventHandler(this.AddEditSupplyOrderBtn_Click);
+            // 
+            // backToSupplyOrdersBtn
+            // 
+            this.backToSupplyOrdersBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backToSupplyOrdersBtn.BackColor = System.Drawing.Color.PowderBlue;
+            this.backToSupplyOrdersBtn.BackgroundColor = System.Drawing.Color.PowderBlue;
+            this.backToSupplyOrdersBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.backToSupplyOrdersBtn.BorderRadius = 7;
+            this.backToSupplyOrdersBtn.BorderSize = 0;
+            this.backToSupplyOrdersBtn.FlatAppearance.BorderSize = 0;
+            this.backToSupplyOrdersBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backToSupplyOrdersBtn.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.backToSupplyOrdersBtn.ForeColor = System.Drawing.Color.Black;
+            this.backToSupplyOrdersBtn.Location = new System.Drawing.Point(33, 28);
+            this.backToSupplyOrdersBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.backToSupplyOrdersBtn.Name = "backToSupplyOrdersBtn";
+            this.backToSupplyOrdersBtn.Size = new System.Drawing.Size(167, 46);
+            this.backToSupplyOrdersBtn.TabIndex = 23;
+            this.backToSupplyOrdersBtn.Text = "Back";
+            this.backToSupplyOrdersBtn.TextColor = System.Drawing.Color.Black;
+            this.backToSupplyOrdersBtn.UseVisualStyleBackColor = false;
+            this.backToSupplyOrdersBtn.Click += new System.EventHandler(this.BackToSupplyOrdersBtn_Click);
             // 
             // editItemToSupplyBtn
             // 
@@ -724,6 +993,7 @@
             this.editItemToSupplyBtn.Text = "Edit Item";
             this.editItemToSupplyBtn.TextColor = System.Drawing.Color.White;
             this.editItemToSupplyBtn.UseVisualStyleBackColor = false;
+            this.editItemToSupplyBtn.Click += new System.EventHandler(this.EditItemToSupplyBtn_Click);
             // 
             // deleteItemToSupplyBtn
             // 
@@ -745,6 +1015,7 @@
             this.deleteItemToSupplyBtn.Text = "Delete Item";
             this.deleteItemToSupplyBtn.TextColor = System.Drawing.Color.White;
             this.deleteItemToSupplyBtn.UseVisualStyleBackColor = false;
+            this.deleteItemToSupplyBtn.Click += new System.EventHandler(this.DeleteItemToSupplyBtn_Click);
             // 
             // addItemToSupplyBtn
             // 
@@ -766,187 +1037,117 @@
             this.addItemToSupplyBtn.Text = "Add Item";
             this.addItemToSupplyBtn.TextColor = System.Drawing.Color.White;
             this.addItemToSupplyBtn.UseVisualStyleBackColor = false;
+            this.addItemToSupplyBtn.Click += new System.EventHandler(this.AddItemToSupplyBtn_Click);
             // 
-            // custamizedButton1
+            // addNewItem
             // 
-            this.custamizedButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.custamizedButton1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.custamizedButton1.BackgroundColor = System.Drawing.Color.LightSlateGray;
-            this.custamizedButton1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.custamizedButton1.BorderRadius = 7;
-            this.custamizedButton1.BorderSize = 0;
-            this.custamizedButton1.FlatAppearance.BorderSize = 0;
-            this.custamizedButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.custamizedButton1.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
-            this.custamizedButton1.ForeColor = System.Drawing.Color.White;
-            this.custamizedButton1.Location = new System.Drawing.Point(884, 661);
-            this.custamizedButton1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.custamizedButton1.Name = "custamizedButton1";
-            this.custamizedButton1.Size = new System.Drawing.Size(222, 80);
-            this.custamizedButton1.TabIndex = 6;
-            this.custamizedButton1.Text = "Back";
-            this.custamizedButton1.TextColor = System.Drawing.Color.White;
-            this.custamizedButton1.UseVisualStyleBackColor = false;
+            this.addNewItem.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.addNewItem.BackColor = System.Drawing.Color.Plum;
+            this.addNewItem.BackgroundColor = System.Drawing.Color.Plum;
+            this.addNewItem.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.addNewItem.BorderRadius = 7;
+            this.addNewItem.BorderSize = 0;
+            this.addNewItem.FlatAppearance.BorderSize = 0;
+            this.addNewItem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addNewItem.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.addNewItem.ForeColor = System.Drawing.Color.White;
+            this.addNewItem.Location = new System.Drawing.Point(1224, 148);
+            this.addNewItem.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addNewItem.Name = "addNewItem";
+            this.addNewItem.Size = new System.Drawing.Size(222, 80);
+            this.addNewItem.TabIndex = 20;
+            this.addNewItem.Text = "Add new Item";
+            this.addNewItem.TextColor = System.Drawing.Color.White;
+            this.addNewItem.UseVisualStyleBackColor = false;
+            this.addNewItem.Click += new System.EventHandler(this.AddNewItemBtn_Click);
             // 
-            // custamizedButton2
+            // BackToSupplyItemBtn
             // 
-            this.custamizedButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.custamizedButton2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.custamizedButton2.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.custamizedButton2.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.custamizedButton2.BorderRadius = 7;
-            this.custamizedButton2.BorderSize = 0;
-            this.custamizedButton2.FlatAppearance.BorderSize = 0;
-            this.custamizedButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.custamizedButton2.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
-            this.custamizedButton2.ForeColor = System.Drawing.Color.White;
-            this.custamizedButton2.Location = new System.Drawing.Point(1155, 661);
-            this.custamizedButton2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.custamizedButton2.Name = "custamizedButton2";
-            this.custamizedButton2.Size = new System.Drawing.Size(222, 80);
-            this.custamizedButton2.TabIndex = 5;
-            this.custamizedButton2.Text = "Save";
-            this.custamizedButton2.TextColor = System.Drawing.Color.White;
-            this.custamizedButton2.UseVisualStyleBackColor = false;
+            this.BackToSupplyItemBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.BackToSupplyItemBtn.BackColor = System.Drawing.Color.LightSlateGray;
+            this.BackToSupplyItemBtn.BackgroundColor = System.Drawing.Color.LightSlateGray;
+            this.BackToSupplyItemBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.BackToSupplyItemBtn.BorderRadius = 7;
+            this.BackToSupplyItemBtn.BorderSize = 0;
+            this.BackToSupplyItemBtn.FlatAppearance.BorderSize = 0;
+            this.BackToSupplyItemBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BackToSupplyItemBtn.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.BackToSupplyItemBtn.ForeColor = System.Drawing.Color.White;
+            this.BackToSupplyItemBtn.Location = new System.Drawing.Point(884, 661);
+            this.BackToSupplyItemBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BackToSupplyItemBtn.Name = "BackToSupplyItemBtn";
+            this.BackToSupplyItemBtn.Size = new System.Drawing.Size(222, 80);
+            this.BackToSupplyItemBtn.TabIndex = 6;
+            this.BackToSupplyItemBtn.Text = "Back";
+            this.BackToSupplyItemBtn.TextColor = System.Drawing.Color.White;
+            this.BackToSupplyItemBtn.UseVisualStyleBackColor = false;
+            this.BackToSupplyItemBtn.Click += new System.EventHandler(this.BackToSupplyItemBtn_Click);
             // 
-            // dataGridView2
+            // saveItemToSupplyBtn
             // 
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Item,
-            this.Quantity,
-            this.ProductionDate,
-            this.ExpirationDate});
-            this.dataGridView2.Location = new System.Drawing.Point(72, 296);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1370, 316);
-            this.dataGridView2.TabIndex = 9;
+            this.saveItemToSupplyBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.saveItemToSupplyBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.saveItemToSupplyBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.saveItemToSupplyBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.saveItemToSupplyBtn.BorderRadius = 7;
+            this.saveItemToSupplyBtn.BorderSize = 0;
+            this.saveItemToSupplyBtn.FlatAppearance.BorderSize = 0;
+            this.saveItemToSupplyBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveItemToSupplyBtn.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.saveItemToSupplyBtn.ForeColor = System.Drawing.Color.White;
+            this.saveItemToSupplyBtn.Location = new System.Drawing.Point(1155, 661);
+            this.saveItemToSupplyBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.saveItemToSupplyBtn.Name = "saveItemToSupplyBtn";
+            this.saveItemToSupplyBtn.Size = new System.Drawing.Size(222, 80);
+            this.saveItemToSupplyBtn.TabIndex = 5;
+            this.saveItemToSupplyBtn.Text = "Save";
+            this.saveItemToSupplyBtn.TextColor = System.Drawing.Color.White;
+            this.saveItemToSupplyBtn.UseVisualStyleBackColor = false;
+            this.saveItemToSupplyBtn.Click += new System.EventHandler(this.SaveItemToSupllyItems);
             // 
-            // Item
+            // backToItemPage
             // 
-            this.Item.HeaderText = "Item";
-            this.Item.MinimumWidth = 6;
-            this.Item.Name = "Item";
+            this.backToItemPage.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.backToItemPage.BackColor = System.Drawing.Color.LightSlateGray;
+            this.backToItemPage.BackgroundColor = System.Drawing.Color.LightSlateGray;
+            this.backToItemPage.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.backToItemPage.BorderRadius = 7;
+            this.backToItemPage.BorderSize = 0;
+            this.backToItemPage.FlatAppearance.BorderSize = 0;
+            this.backToItemPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.backToItemPage.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.backToItemPage.ForeColor = System.Drawing.Color.White;
+            this.backToItemPage.Location = new System.Drawing.Point(884, 661);
+            this.backToItemPage.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.backToItemPage.Name = "backToItemPage";
+            this.backToItemPage.Size = new System.Drawing.Size(222, 80);
+            this.backToItemPage.TabIndex = 6;
+            this.backToItemPage.Text = "Back";
+            this.backToItemPage.TextColor = System.Drawing.Color.White;
+            this.backToItemPage.UseVisualStyleBackColor = false;
+            this.backToItemPage.Click += new System.EventHandler(this.BackToItemPage_Click);
             // 
-            // Quantity
+            // AddNewItemBtn
             // 
-            this.Quantity.HeaderText = "Quantity";
-            this.Quantity.MinimumWidth = 6;
-            this.Quantity.Name = "Quantity";
-            // 
-            // ProductionDate
-            // 
-            this.ProductionDate.HeaderText = "Production Date";
-            this.ProductionDate.MinimumWidth = 6;
-            this.ProductionDate.Name = "ProductionDate";
-            // 
-            // ExpirationDate
-            // 
-            this.ExpirationDate.HeaderText = "Expiration Date";
-            this.ExpirationDate.MinimumWidth = 6;
-            this.ExpirationDate.Name = "ExpirationDate";
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.Controls.Add(this.comboBox1);
-            this.panel3.Controls.Add(this.warehouseNameLbl);
-            this.panel3.Location = new System.Drawing.Point(72, 55);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(329, 191);
-            this.panel3.TabIndex = 4;
-            // 
-            // warehouseNameLbl
-            // 
-            this.warehouseNameLbl.AutoSize = true;
-            this.warehouseNameLbl.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.warehouseNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.warehouseNameLbl.Location = new System.Drawing.Point(46, 48);
-            this.warehouseNameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.warehouseNameLbl.Name = "warehouseNameLbl";
-            this.warehouseNameLbl.Size = new System.Drawing.Size(191, 28);
-            this.warehouseNameLbl.TabIndex = 1;
-            this.warehouseNameLbl.Text = "Warehouse Name";
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.supplierNameLbl);
-            this.panel1.Location = new System.Drawing.Point(592, 55);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(329, 191);
-            this.panel1.TabIndex = 5;
-            // 
-            // supplierNameLbl
-            // 
-            this.supplierNameLbl.AutoSize = true;
-            this.supplierNameLbl.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.supplierNameLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.supplierNameLbl.Location = new System.Drawing.Point(46, 48);
-            this.supplierNameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.supplierNameLbl.Name = "supplierNameLbl";
-            this.supplierNameLbl.Size = new System.Drawing.Size(164, 28);
-            this.supplierNameLbl.TabIndex = 1;
-            this.supplierNameLbl.Text = "Supplier Name";
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.Controls.Add(this.rjDatePicker1);
-            this.panel2.Controls.Add(this.orderDateLbl);
-            this.panel2.Location = new System.Drawing.Point(1113, 55);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(329, 191);
-            this.panel2.TabIndex = 10;
-            // 
-            // orderDateLbl
-            // 
-            this.orderDateLbl.AutoSize = true;
-            this.orderDateLbl.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.orderDateLbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.orderDateLbl.Location = new System.Drawing.Point(46, 48);
-            this.orderDateLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.orderDateLbl.Name = "orderDateLbl";
-            this.orderDateLbl.Size = new System.Drawing.Size(124, 28);
-            this.orderDateLbl.TabIndex = 3;
-            this.orderDateLbl.Text = "Order Date";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(51, 109);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(228, 33);
-            this.comboBox1.TabIndex = 3;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(51, 109);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(228, 33);
-            this.comboBox2.TabIndex = 4;
-            // 
-            // rjDatePicker1
-            // 
-            this.rjDatePicker1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.rjDatePicker1.BorderSize = 0;
-            this.rjDatePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.rjDatePicker1.Location = new System.Drawing.Point(51, 109);
-            this.rjDatePicker1.MinimumSize = new System.Drawing.Size(0, 35);
-            this.rjDatePicker1.Name = "rjDatePicker1";
-            this.rjDatePicker1.Size = new System.Drawing.Size(232, 35);
-            this.rjDatePicker1.SkinColor = System.Drawing.Color.Thistle;
-            this.rjDatePicker1.TabIndex = 11;
-            this.rjDatePicker1.TextColor = System.Drawing.Color.White;
+            this.AddNewItemBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.AddNewItemBtn.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.AddNewItemBtn.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.AddNewItemBtn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.AddNewItemBtn.BorderRadius = 7;
+            this.AddNewItemBtn.BorderSize = 0;
+            this.AddNewItemBtn.FlatAppearance.BorderSize = 0;
+            this.AddNewItemBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.AddNewItemBtn.Font = new System.Drawing.Font("Verdana Pro Cond", 13.8F, System.Drawing.FontStyle.Bold);
+            this.AddNewItemBtn.ForeColor = System.Drawing.Color.White;
+            this.AddNewItemBtn.Location = new System.Drawing.Point(1155, 661);
+            this.AddNewItemBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddNewItemBtn.Name = "AddNewItemBtn";
+            this.AddNewItemBtn.Size = new System.Drawing.Size(222, 80);
+            this.AddNewItemBtn.TabIndex = 5;
+            this.AddNewItemBtn.Text = "Save";
+            this.AddNewItemBtn.TextColor = System.Drawing.Color.White;
+            this.AddNewItemBtn.UseVisualStyleBackColor = false;
+            this.AddNewItemBtn.Click += new System.EventHandler(this.SaveNewItemBtn_Click);
             // 
             // SupplyOrdersForm
             // 
@@ -975,32 +1176,35 @@
             ((System.ComponentModel.ISupportInitialize)(this.supplyOrderDataGrid)).EndInit();
             this.SupplyOrdersAddEditPage.ResumeLayout(false);
             this.addWarehousPanel.ResumeLayout(false);
-            this.itemsListPage.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            this.itemAddEditPage.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel13.ResumeLayout(false);
-            this.panel13.PerformLayout();
-            this.panel14.ResumeLayout(false);
-            this.panel14.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.supplyItemsDataGridView)).EndInit();
+            this.itemsListPage.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SupplyItemsDtaGridView)).EndInit();
+            this.itemAddEditPage.ResumeLayout(false);
+            this.panel9.ResumeLayout(false);
+            this.panel9.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            this.panel15.PerformLayout();
+            this.addNewItemPage.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
+            this.panel10.ResumeLayout(false);
+            this.panel10.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel12.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1025,49 +1229,59 @@
         private CustamizedButton viewItemsButton;
         private System.Windows.Forms.TabPage itemsListPage;
         private System.Windows.Forms.Panel panel7;
-        private RJCodeAdvance.RJControls.RJComboBox rjComboBox1;
+        private RJCodeAdvance.RJControls.RJComboBox selectedItemCombobox;
         private CustamizedButton editItemToSupplyBtn;
         private CustamizedButton deleteItemToSupplyBtn;
         private CustamizedButton addItemToSupplyBtn;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView SupplyItemsDtaGridView;
         private System.Windows.Forms.TabPage itemAddEditPage;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label7;
-        private CustamizedButton custamizedButton1;
-        private CustamizedButton custamizedButton2;
+        private CustamizedButton BackToSupplyItemBtn;
+        private CustamizedButton saveItemToSupplyBtn;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Item;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ProductionDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ExpirationDate;
+        private System.Windows.Forms.Label itemNameLbl;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label warehouseNameLbl;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label orderDateLbl;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label supplierNameLbl;
-        private RJCodeAdvance.RJControls.RJDatePicker rjDatePicker1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private RJCodeAdvance.RJControls.RJDatePicker orderDatePicker;
+        private System.Windows.Forms.ComboBox suppliersComboBox;
+        private System.Windows.Forms.ComboBox warehousesComboBox;
+        private System.Windows.Forms.ComboBox SupplyOrderComboBox;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox searchSupplyOrderItemTextBox;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel6;
+        private RJCodeAdvance.RJControls.RJDatePicker expirationDateDatePicker;
+        private System.Windows.Forms.Label expirationDatelabel;
+        private System.Windows.Forms.Panel panel5;
+        private RJCodeAdvance.RJControls.RJDatePicker productionDateDatePicker;
+        private System.Windows.Forms.Label productionDatelabel;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Label itemQuantityLbl;
+        private System.Windows.Forms.TextBox quantityTextBox;
+        private System.Windows.Forms.ComboBox itemNameComboBox;
+        private System.Windows.Forms.Label notInListItemsLabel;
+        private CustamizedButton addNewItem;
+        private System.Windows.Forms.TabPage addNewItemPage;
+        private System.Windows.Forms.Panel panel8;
+        private CustamizedButton backToItemPage;
+        private CustamizedButton AddNewItemBtn;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.TextBox txtItemUnit;
+        private System.Windows.Forms.Label itemUnitLabel;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.TextBox txtItemName;
+        private System.Windows.Forms.Label ItemNameLabel;
+        private CustamizedButton backToSupplyOrdersBtn;
+        private CustamizedButton addItemInSupplyPageBtn;
+        private System.Windows.Forms.DataGridView supplyItemsDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductionDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ExpirationDate;
     }
 }
