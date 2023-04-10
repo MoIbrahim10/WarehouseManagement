@@ -266,7 +266,7 @@
             this.supplierWarehousePage.TabIndex = 4;
             this.supplierWarehousePage.Text = "Suppplier Warehouse List";
             this.supplierWarehousePage.UseVisualStyleBackColor = true;
-            this.supplierWarehousePage.Enter += new System.EventHandler(this.supplierWarehousePage_Enter);
+            this.supplierWarehousePage.Enter += new System.EventHandler(this.SupplierWarehousePage_Enter);
             // 
             // panel9
             // 

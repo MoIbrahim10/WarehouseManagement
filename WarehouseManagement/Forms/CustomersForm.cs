@@ -14,7 +14,7 @@ namespace WarehouseManagement.Forms
 {
     public partial class CustomersForm : Form
     {
-        WarehouseManagementDBEntities warehouseManagementDB = new WarehouseManagementDBEntities();
+        readonly WarehouseManagementDBEntities warehouseManagementDB = new WarehouseManagementDBEntities();
         private Customer currentCustomer;
         private WarehouseCustomer currentWarehouseCustomer;
         private bool isEdit;
@@ -370,9 +370,9 @@ namespace WarehouseManagement.Forms
         }
         private void CustomerComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (CustomerComboBox.SelectedItem != null && CustomerComboBox.SelectedValue is int)
+            if (CustomerComboBox.SelectedItem != null && CustomerComboBox.SelectedValue is int customerId)
             {
-                int customerID = (int)CustomerComboBox.SelectedValue;
+                int customerID = customerId;
                 UpdateCustomerWarehousesDataGrid(customerID);
             }
         }
@@ -393,8 +393,10 @@ namespace WarehouseManagement.Forms
                            .ToList();
 
 
-            var bindingSource = new BindingSource();
-            bindingSource.DataSource = customerWarehouses;
+            var bindingSource = new BindingSource
+            {
+                DataSource = customerWarehouses
+            };
 
             customerWarehousesDataGridView.DataSource = bindingSource;
 
