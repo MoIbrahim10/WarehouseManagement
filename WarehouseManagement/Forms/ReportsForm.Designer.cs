@@ -49,35 +49,53 @@
             this.warehousesDataGridView = new System.Windows.Forms.DataGridView();
             this.warehousesComboBox = new System.Windows.Forms.ComboBox();
             this.itemsReportsPage = new System.Windows.Forms.TabPage();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.itemToDatePicker = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.itemFromDatePicker = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.itemWarehousesRadioBtn = new CustomBox.RJControls.RJRadioButton();
+            this.itemSupplyOrdersRadioBtn = new CustomBox.RJControls.RJRadioButton();
+            this.itemIssuanceOrdersRadioBtn = new CustomBox.RJControls.RJRadioButton();
+            this.itemSuppliersRadioBtn = new CustomBox.RJControls.RJRadioButton();
+            this.ItemUnitTextBox = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.ItemCodeTextBox = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.itemSearchBar = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.itemsDataGridView = new System.Windows.Forms.DataGridView();
             this.itemsComboBox = new System.Windows.Forms.ComboBox();
             this.suppliersReportsPage = new System.Windows.Forms.TabPage();
             this.panel2 = new System.Windows.Forms.Panel();
             this.supplierSearchBar = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.supplierDataGridView = new System.Windows.Forms.DataGridView();
             this.suppliersComboBox = new System.Windows.Forms.ComboBox();
-            this.customersReportsPage = new System.Windows.Forms.TabPage();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.customerSearchBar = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
-            this.customersComboBox = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.supplierToDatePicker = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.supplierFromDatePicker = new RJCodeAdvance.RJControls.RJDatePicker();
+            this.supplierWarehousesRadioBtn = new CustomBox.RJControls.RJRadioButton();
+            this.supplierSupplyOrderRadioBtn = new CustomBox.RJControls.RJRadioButton();
+            this.supplierIssuanceOrderRadioBtn = new CustomBox.RJControls.RJRadioButton();
+            this.supplierItemsRadioBtn = new CustomBox.RJControls.RJRadioButton();
+            this.supplierPhoneTextBox = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.supplierEmailTextBox = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.supplierMobileTextBox = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.supplierWebsiteTextBox = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.warehouseReportsPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.warehousesDataGridView)).BeginInit();
             this.itemsReportsPage.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemsDataGridView)).BeginInit();
             this.suppliersReportsPage.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            this.customersReportsPage.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -85,7 +103,6 @@
             this.tabControl1.Controls.Add(this.warehouseReportsPage);
             this.tabControl1.Controls.Add(this.itemsReportsPage);
             this.tabControl1.Controls.Add(this.suppliersReportsPage);
-            this.tabControl1.Controls.Add(this.customersReportsPage);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -369,8 +386,19 @@
             // itemsReportsPage
             // 
             this.itemsReportsPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.itemsReportsPage.Controls.Add(this.label8);
+            this.itemsReportsPage.Controls.Add(this.label9);
+            this.itemsReportsPage.Controls.Add(this.itemToDatePicker);
+            this.itemsReportsPage.Controls.Add(this.itemFromDatePicker);
+            this.itemsReportsPage.Controls.Add(this.itemWarehousesRadioBtn);
+            this.itemsReportsPage.Controls.Add(this.itemSupplyOrdersRadioBtn);
+            this.itemsReportsPage.Controls.Add(this.itemIssuanceOrdersRadioBtn);
+            this.itemsReportsPage.Controls.Add(this.itemSuppliersRadioBtn);
+            this.itemsReportsPage.Controls.Add(this.ItemUnitTextBox);
+            this.itemsReportsPage.Controls.Add(this.label11);
+            this.itemsReportsPage.Controls.Add(this.ItemCodeTextBox);
             this.itemsReportsPage.Controls.Add(this.panel1);
-            this.itemsReportsPage.Controls.Add(this.dataGridView2);
+            this.itemsReportsPage.Controls.Add(this.itemsDataGridView);
             this.itemsReportsPage.Controls.Add(this.itemsComboBox);
             this.itemsReportsPage.Location = new System.Drawing.Point(4, 34);
             this.itemsReportsPage.Name = "itemsReportsPage";
@@ -379,6 +407,162 @@
             this.itemsReportsPage.TabIndex = 1;
             this.itemsReportsPage.Text = "Items Reports";
             this.itemsReportsPage.Enter += new System.EventHandler(this.ItemsReportsPage_Enter);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label8.Location = new System.Drawing.Point(1023, 344);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 25);
+            this.label8.TabIndex = 48;
+            this.label8.Text = "To";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label9.Location = new System.Drawing.Point(1023, 302);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 25);
+            this.label9.TabIndex = 47;
+            this.label9.Text = "From";
+            // 
+            // itemToDatePicker
+            // 
+            this.itemToDatePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.itemToDatePicker.BorderSize = 0;
+            this.itemToDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.itemToDatePicker.Location = new System.Drawing.Point(1113, 338);
+            this.itemToDatePicker.MinimumSize = new System.Drawing.Size(4, 35);
+            this.itemToDatePicker.Name = "itemToDatePicker";
+            this.itemToDatePicker.Size = new System.Drawing.Size(350, 35);
+            this.itemToDatePicker.SkinColor = System.Drawing.Color.MediumSlateBlue;
+            this.itemToDatePicker.TabIndex = 46;
+            this.itemToDatePicker.TextColor = System.Drawing.Color.White;
+            this.itemToDatePicker.Validating += new System.ComponentModel.CancelEventHandler(this.DatePickerItem_Validating);
+            // 
+            // itemFromDatePicker
+            // 
+            this.itemFromDatePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.itemFromDatePicker.BorderSize = 0;
+            this.itemFromDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.itemFromDatePicker.Location = new System.Drawing.Point(1113, 296);
+            this.itemFromDatePicker.MinimumSize = new System.Drawing.Size(4, 35);
+            this.itemFromDatePicker.Name = "itemFromDatePicker";
+            this.itemFromDatePicker.Size = new System.Drawing.Size(350, 35);
+            this.itemFromDatePicker.SkinColor = System.Drawing.Color.MediumSlateBlue;
+            this.itemFromDatePicker.TabIndex = 45;
+            this.itemFromDatePicker.TextColor = System.Drawing.Color.White;
+            this.itemFromDatePicker.Validating += new System.ComponentModel.CancelEventHandler(this.DatePickerItem_Validating);
+            // 
+            // itemWarehousesRadioBtn
+            // 
+            this.itemWarehousesRadioBtn.AutoSize = true;
+            this.itemWarehousesRadioBtn.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.itemWarehousesRadioBtn.ForeColor = System.Drawing.Color.White;
+            this.itemWarehousesRadioBtn.Location = new System.Drawing.Point(745, 198);
+            this.itemWarehousesRadioBtn.MinimumSize = new System.Drawing.Size(0, 21);
+            this.itemWarehousesRadioBtn.Name = "itemWarehousesRadioBtn";
+            this.itemWarehousesRadioBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.itemWarehousesRadioBtn.Size = new System.Drawing.Size(219, 29);
+            this.itemWarehousesRadioBtn.TabIndex = 44;
+            this.itemWarehousesRadioBtn.TabStop = true;
+            this.itemWarehousesRadioBtn.Text = "Item Warehouses";
+            this.itemWarehousesRadioBtn.UnCheckedColor = System.Drawing.Color.Gray;
+            this.itemWarehousesRadioBtn.UseVisualStyleBackColor = true;
+            this.itemWarehousesRadioBtn.CheckedChanged += new System.EventHandler(this.RadioBtnItems_CheckedChanged);
+            // 
+            // itemSupplyOrdersRadioBtn
+            // 
+            this.itemSupplyOrdersRadioBtn.AutoSize = true;
+            this.itemSupplyOrdersRadioBtn.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.itemSupplyOrdersRadioBtn.ForeColor = System.Drawing.Color.White;
+            this.itemSupplyOrdersRadioBtn.Location = new System.Drawing.Point(745, 298);
+            this.itemSupplyOrdersRadioBtn.MinimumSize = new System.Drawing.Size(0, 21);
+            this.itemSupplyOrdersRadioBtn.Name = "itemSupplyOrdersRadioBtn";
+            this.itemSupplyOrdersRadioBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.itemSupplyOrdersRadioBtn.Size = new System.Drawing.Size(186, 29);
+            this.itemSupplyOrdersRadioBtn.TabIndex = 43;
+            this.itemSupplyOrdersRadioBtn.TabStop = true;
+            this.itemSupplyOrdersRadioBtn.Text = "Supply Orders";
+            this.itemSupplyOrdersRadioBtn.UnCheckedColor = System.Drawing.Color.Gray;
+            this.itemSupplyOrdersRadioBtn.UseVisualStyleBackColor = true;
+            this.itemSupplyOrdersRadioBtn.CheckedChanged += new System.EventHandler(this.RadioBtnItems_CheckedChanged);
+            // 
+            // itemIssuanceOrdersRadioBtn
+            // 
+            this.itemIssuanceOrdersRadioBtn.AutoSize = true;
+            this.itemIssuanceOrdersRadioBtn.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.itemIssuanceOrdersRadioBtn.ForeColor = System.Drawing.Color.White;
+            this.itemIssuanceOrdersRadioBtn.Location = new System.Drawing.Point(745, 344);
+            this.itemIssuanceOrdersRadioBtn.MinimumSize = new System.Drawing.Size(0, 21);
+            this.itemIssuanceOrdersRadioBtn.Name = "itemIssuanceOrdersRadioBtn";
+            this.itemIssuanceOrdersRadioBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.itemIssuanceOrdersRadioBtn.Size = new System.Drawing.Size(206, 29);
+            this.itemIssuanceOrdersRadioBtn.TabIndex = 42;
+            this.itemIssuanceOrdersRadioBtn.TabStop = true;
+            this.itemIssuanceOrdersRadioBtn.Text = "Issuance Orders";
+            this.itemIssuanceOrdersRadioBtn.UnCheckedColor = System.Drawing.Color.Gray;
+            this.itemIssuanceOrdersRadioBtn.UseVisualStyleBackColor = true;
+            this.itemIssuanceOrdersRadioBtn.CheckedChanged += new System.EventHandler(this.RadioBtnItems_CheckedChanged);
+            // 
+            // itemSuppliersRadioBtn
+            // 
+            this.itemSuppliersRadioBtn.AutoSize = true;
+            this.itemSuppliersRadioBtn.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.itemSuppliersRadioBtn.ForeColor = System.Drawing.Color.White;
+            this.itemSuppliersRadioBtn.Location = new System.Drawing.Point(745, 247);
+            this.itemSuppliersRadioBtn.MinimumSize = new System.Drawing.Size(0, 21);
+            this.itemSuppliersRadioBtn.Name = "itemSuppliersRadioBtn";
+            this.itemSuppliersRadioBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.itemSuppliersRadioBtn.Size = new System.Drawing.Size(189, 29);
+            this.itemSuppliersRadioBtn.TabIndex = 40;
+            this.itemSuppliersRadioBtn.TabStop = true;
+            this.itemSuppliersRadioBtn.Text = "Item Suppliers";
+            this.itemSuppliersRadioBtn.UnCheckedColor = System.Drawing.Color.Gray;
+            this.itemSuppliersRadioBtn.UseVisualStyleBackColor = true;
+            this.itemSuppliersRadioBtn.CheckedChanged += new System.EventHandler(this.RadioBtnItems_CheckedChanged);
+            // 
+            // ItemUnitTextBox
+            // 
+            this.ItemUnitTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.ItemUnitTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ItemUnitTextBox.Font = new System.Drawing.Font("Verdana Pro Cond Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemUnitTextBox.ForeColor = System.Drawing.Color.White;
+            this.ItemUnitTextBox.Location = new System.Drawing.Point(167, 283);
+            this.ItemUnitTextBox.Name = "ItemUnitTextBox";
+            this.ItemUnitTextBox.ReadOnly = true;
+            this.ItemUnitTextBox.Size = new System.Drawing.Size(417, 25);
+            this.ItemUnitTextBox.TabIndex = 37;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label11.Location = new System.Drawing.Point(102, 283);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(58, 25);
+            this.label11.TabIndex = 36;
+            this.label11.Text = "Unit";
+            // 
+            // ItemCodeTextBox
+            // 
+            this.ItemCodeTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.ItemCodeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ItemCodeTextBox.Font = new System.Drawing.Font("Verdana Pro", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ItemCodeTextBox.ForeColor = System.Drawing.Color.White;
+            this.ItemCodeTextBox.Location = new System.Drawing.Point(107, 213);
+            this.ItemCodeTextBox.Name = "ItemCodeTextBox";
+            this.ItemCodeTextBox.ReadOnly = true;
+            this.ItemCodeTextBox.Size = new System.Drawing.Size(568, 33);
+            this.ItemCodeTextBox.TabIndex = 35;
             // 
             // panel1
             // 
@@ -398,6 +582,7 @@
             this.itemSearchBar.Name = "itemSearchBar";
             this.itemSearchBar.Size = new System.Drawing.Size(562, 35);
             this.itemSearchBar.TabIndex = 20;
+            this.itemSearchBar.TextChanged += new System.EventHandler(this.ItemSearchBar_TextChanged);
             // 
             // label1
             // 
@@ -411,18 +596,20 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Search";
             // 
-            // dataGridView2
+            // itemsDataGridView
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(107, 215);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1356, 575);
-            this.dataGridView2.TabIndex = 17;
+            this.itemsDataGridView.AllowUserToAddRows = false;
+            this.itemsDataGridView.AllowUserToDeleteRows = false;
+            this.itemsDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.itemsDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.itemsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.itemsDataGridView.Location = new System.Drawing.Point(107, 400);
+            this.itemsDataGridView.Name = "itemsDataGridView";
+            this.itemsDataGridView.ReadOnly = true;
+            this.itemsDataGridView.RowHeadersWidth = 51;
+            this.itemsDataGridView.RowTemplate.Height = 24;
+            this.itemsDataGridView.Size = new System.Drawing.Size(1356, 390);
+            this.itemsDataGridView.TabIndex = 17;
             // 
             // itemsComboBox
             // 
@@ -431,12 +618,29 @@
             this.itemsComboBox.Name = "itemsComboBox";
             this.itemsComboBox.Size = new System.Drawing.Size(568, 33);
             this.itemsComboBox.TabIndex = 16;
+            this.itemsComboBox.SelectedIndexChanged += new System.EventHandler(this.ItemsComboBox_SelectedIndexChanged);
             // 
             // suppliersReportsPage
             // 
             this.suppliersReportsPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.suppliersReportsPage.Controls.Add(this.supplierWebsiteTextBox);
+            this.suppliersReportsPage.Controls.Add(this.label16);
+            this.suppliersReportsPage.Controls.Add(this.supplierMobileTextBox);
+            this.suppliersReportsPage.Controls.Add(this.label15);
+            this.suppliersReportsPage.Controls.Add(this.supplierEmailTextBox);
+            this.suppliersReportsPage.Controls.Add(this.label14);
+            this.suppliersReportsPage.Controls.Add(this.label10);
+            this.suppliersReportsPage.Controls.Add(this.label12);
+            this.suppliersReportsPage.Controls.Add(this.supplierToDatePicker);
+            this.suppliersReportsPage.Controls.Add(this.supplierFromDatePicker);
+            this.suppliersReportsPage.Controls.Add(this.supplierWarehousesRadioBtn);
+            this.suppliersReportsPage.Controls.Add(this.supplierSupplyOrderRadioBtn);
+            this.suppliersReportsPage.Controls.Add(this.supplierIssuanceOrderRadioBtn);
+            this.suppliersReportsPage.Controls.Add(this.supplierItemsRadioBtn);
+            this.suppliersReportsPage.Controls.Add(this.supplierPhoneTextBox);
+            this.suppliersReportsPage.Controls.Add(this.label13);
             this.suppliersReportsPage.Controls.Add(this.panel2);
-            this.suppliersReportsPage.Controls.Add(this.dataGridView3);
+            this.suppliersReportsPage.Controls.Add(this.supplierDataGridView);
             this.suppliersReportsPage.Controls.Add(this.suppliersComboBox);
             this.suppliersReportsPage.Location = new System.Drawing.Point(4, 34);
             this.suppliersReportsPage.Name = "suppliersReportsPage";
@@ -463,6 +667,7 @@
             this.supplierSearchBar.Name = "supplierSearchBar";
             this.supplierSearchBar.Size = new System.Drawing.Size(562, 35);
             this.supplierSearchBar.TabIndex = 20;
+            this.supplierSearchBar.TextChanged += new System.EventHandler(this.SupplierSearchBar_TextChanged);
             // 
             // label2
             // 
@@ -476,18 +681,20 @@
             this.label2.TabIndex = 16;
             this.label2.Text = "Search";
             // 
-            // dataGridView3
+            // supplierDataGridView
             // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(107, 215);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.RowTemplate.Height = 24;
-            this.dataGridView3.Size = new System.Drawing.Size(1356, 575);
-            this.dataGridView3.TabIndex = 20;
+            this.supplierDataGridView.AllowUserToAddRows = false;
+            this.supplierDataGridView.AllowUserToDeleteRows = false;
+            this.supplierDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.supplierDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.supplierDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.supplierDataGridView.Location = new System.Drawing.Point(107, 401);
+            this.supplierDataGridView.Name = "supplierDataGridView";
+            this.supplierDataGridView.ReadOnly = true;
+            this.supplierDataGridView.RowHeadersWidth = 51;
+            this.supplierDataGridView.RowTemplate.Height = 24;
+            this.supplierDataGridView.Size = new System.Drawing.Size(1356, 389);
+            this.supplierDataGridView.TabIndex = 20;
             // 
             // suppliersComboBox
             // 
@@ -496,71 +703,226 @@
             this.suppliersComboBox.Name = "suppliersComboBox";
             this.suppliersComboBox.Size = new System.Drawing.Size(568, 33);
             this.suppliersComboBox.TabIndex = 19;
+            this.suppliersComboBox.SelectedIndexChanged += new System.EventHandler(this.SuppliersComboBox_SelectedIndexChanged);
             // 
-            // customersReportsPage
+            // label10
             // 
-            this.customersReportsPage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
-            this.customersReportsPage.Controls.Add(this.panel3);
-            this.customersReportsPage.Controls.Add(this.dataGridView4);
-            this.customersReportsPage.Controls.Add(this.customersComboBox);
-            this.customersReportsPage.Location = new System.Drawing.Point(4, 34);
-            this.customersReportsPage.Name = "customersReportsPage";
-            this.customersReportsPage.Size = new System.Drawing.Size(1571, 840);
-            this.customersReportsPage.TabIndex = 3;
-            this.customersReportsPage.Text = "Customer Reports";
-            this.customersReportsPage.Enter += new System.EventHandler(this.CustomersReportsPage_Enter);
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label10.Location = new System.Drawing.Point(1023, 354);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 25);
+            this.label10.TabIndex = 59;
+            this.label10.Text = "To";
             // 
-            // panel3
+            // label12
             // 
-            this.panel3.Controls.Add(this.customerSearchBar);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(107, 50);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(742, 130);
-            this.panel3.TabIndex = 21;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label12.Location = new System.Drawing.Point(1023, 312);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(70, 25);
+            this.label12.TabIndex = 58;
+            this.label12.Text = "From";
             // 
-            // customerSearchBar
+            // supplierToDatePicker
             // 
-            this.customerSearchBar.Font = new System.Drawing.Font("Verdana Pro", 13.8F);
-            this.customerSearchBar.Location = new System.Drawing.Point(151, 46);
-            this.customerSearchBar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.customerSearchBar.Name = "customerSearchBar";
-            this.customerSearchBar.Size = new System.Drawing.Size(562, 35);
-            this.customerSearchBar.TabIndex = 20;
+            this.supplierToDatePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.supplierToDatePicker.BorderSize = 0;
+            this.supplierToDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.supplierToDatePicker.Location = new System.Drawing.Point(1113, 348);
+            this.supplierToDatePicker.MinimumSize = new System.Drawing.Size(4, 35);
+            this.supplierToDatePicker.Name = "supplierToDatePicker";
+            this.supplierToDatePicker.Size = new System.Drawing.Size(350, 35);
+            this.supplierToDatePicker.SkinColor = System.Drawing.Color.MediumSlateBlue;
+            this.supplierToDatePicker.TabIndex = 57;
+            this.supplierToDatePicker.TextColor = System.Drawing.Color.White;
+            this.supplierToDatePicker.Validating += new System.ComponentModel.CancelEventHandler(this.supplierDatePicker_Validating);
             // 
-            // label3
+            // supplierFromDatePicker
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Verdana", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
-            this.label3.Location = new System.Drawing.Point(25, 51);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(99, 28);
-            this.label3.TabIndex = 16;
-            this.label3.Text = "Search";
+            this.supplierFromDatePicker.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.supplierFromDatePicker.BorderSize = 0;
+            this.supplierFromDatePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.supplierFromDatePicker.Location = new System.Drawing.Point(1113, 306);
+            this.supplierFromDatePicker.MinimumSize = new System.Drawing.Size(4, 35);
+            this.supplierFromDatePicker.Name = "supplierFromDatePicker";
+            this.supplierFromDatePicker.Size = new System.Drawing.Size(350, 35);
+            this.supplierFromDatePicker.SkinColor = System.Drawing.Color.MediumSlateBlue;
+            this.supplierFromDatePicker.TabIndex = 56;
+            this.supplierFromDatePicker.TextColor = System.Drawing.Color.White;
+            this.supplierFromDatePicker.Validating += new System.ComponentModel.CancelEventHandler(this.supplierDatePicker_Validating);
             // 
-            // dataGridView4
+            // supplierWarehousesRadioBtn
             // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.AllowUserToDeleteRows = false;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(107, 215);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.RowHeadersWidth = 51;
-            this.dataGridView4.RowTemplate.Height = 24;
-            this.dataGridView4.Size = new System.Drawing.Size(1356, 575);
-            this.dataGridView4.TabIndex = 20;
+            this.supplierWarehousesRadioBtn.AutoSize = true;
+            this.supplierWarehousesRadioBtn.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.supplierWarehousesRadioBtn.ForeColor = System.Drawing.Color.White;
+            this.supplierWarehousesRadioBtn.Location = new System.Drawing.Point(745, 208);
+            this.supplierWarehousesRadioBtn.MinimumSize = new System.Drawing.Size(0, 21);
+            this.supplierWarehousesRadioBtn.Name = "supplierWarehousesRadioBtn";
+            this.supplierWarehousesRadioBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.supplierWarehousesRadioBtn.Size = new System.Drawing.Size(254, 29);
+            this.supplierWarehousesRadioBtn.TabIndex = 55;
+            this.supplierWarehousesRadioBtn.TabStop = true;
+            this.supplierWarehousesRadioBtn.Text = "Supplier Warehouses";
+            this.supplierWarehousesRadioBtn.UnCheckedColor = System.Drawing.Color.Gray;
+            this.supplierWarehousesRadioBtn.UseVisualStyleBackColor = true;
+            this.supplierWarehousesRadioBtn.CheckedChanged += new System.EventHandler(this.SupplierRadioBtn_CheckedChanged);
             // 
-            // customersComboBox
+            // supplierSupplyOrderRadioBtn
             // 
-            this.customersComboBox.FormattingEnabled = true;
-            this.customersComboBox.Location = new System.Drawing.Point(895, 96);
-            this.customersComboBox.Name = "customersComboBox";
-            this.customersComboBox.Size = new System.Drawing.Size(568, 33);
-            this.customersComboBox.TabIndex = 19;
+            this.supplierSupplyOrderRadioBtn.AutoSize = true;
+            this.supplierSupplyOrderRadioBtn.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.supplierSupplyOrderRadioBtn.ForeColor = System.Drawing.Color.White;
+            this.supplierSupplyOrderRadioBtn.Location = new System.Drawing.Point(745, 308);
+            this.supplierSupplyOrderRadioBtn.MinimumSize = new System.Drawing.Size(0, 21);
+            this.supplierSupplyOrderRadioBtn.Name = "supplierSupplyOrderRadioBtn";
+            this.supplierSupplyOrderRadioBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.supplierSupplyOrderRadioBtn.Size = new System.Drawing.Size(186, 29);
+            this.supplierSupplyOrderRadioBtn.TabIndex = 54;
+            this.supplierSupplyOrderRadioBtn.TabStop = true;
+            this.supplierSupplyOrderRadioBtn.Text = "Supply Orders";
+            this.supplierSupplyOrderRadioBtn.UnCheckedColor = System.Drawing.Color.Gray;
+            this.supplierSupplyOrderRadioBtn.UseVisualStyleBackColor = true;
+            this.supplierSupplyOrderRadioBtn.CheckedChanged += new System.EventHandler(this.SupplierRadioBtn_CheckedChanged);
+            // 
+            // supplierIssuanceOrderRadioBtn
+            // 
+            this.supplierIssuanceOrderRadioBtn.AutoSize = true;
+            this.supplierIssuanceOrderRadioBtn.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.supplierIssuanceOrderRadioBtn.ForeColor = System.Drawing.Color.White;
+            this.supplierIssuanceOrderRadioBtn.Location = new System.Drawing.Point(745, 354);
+            this.supplierIssuanceOrderRadioBtn.MinimumSize = new System.Drawing.Size(0, 21);
+            this.supplierIssuanceOrderRadioBtn.Name = "supplierIssuanceOrderRadioBtn";
+            this.supplierIssuanceOrderRadioBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.supplierIssuanceOrderRadioBtn.Size = new System.Drawing.Size(206, 29);
+            this.supplierIssuanceOrderRadioBtn.TabIndex = 53;
+            this.supplierIssuanceOrderRadioBtn.TabStop = true;
+            this.supplierIssuanceOrderRadioBtn.Text = "Issuance Orders";
+            this.supplierIssuanceOrderRadioBtn.UnCheckedColor = System.Drawing.Color.Gray;
+            this.supplierIssuanceOrderRadioBtn.UseVisualStyleBackColor = true;
+            this.supplierIssuanceOrderRadioBtn.CheckedChanged += new System.EventHandler(this.SupplierRadioBtn_CheckedChanged);
+            // 
+            // supplierItemsRadioBtn
+            // 
+            this.supplierItemsRadioBtn.AutoSize = true;
+            this.supplierItemsRadioBtn.CheckedColor = System.Drawing.Color.MediumSlateBlue;
+            this.supplierItemsRadioBtn.ForeColor = System.Drawing.Color.White;
+            this.supplierItemsRadioBtn.Location = new System.Drawing.Point(745, 257);
+            this.supplierItemsRadioBtn.MinimumSize = new System.Drawing.Size(0, 21);
+            this.supplierItemsRadioBtn.Name = "supplierItemsRadioBtn";
+            this.supplierItemsRadioBtn.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.supplierItemsRadioBtn.Size = new System.Drawing.Size(189, 29);
+            this.supplierItemsRadioBtn.TabIndex = 52;
+            this.supplierItemsRadioBtn.TabStop = true;
+            this.supplierItemsRadioBtn.Text = "Supplier Items";
+            this.supplierItemsRadioBtn.UnCheckedColor = System.Drawing.Color.Gray;
+            this.supplierItemsRadioBtn.UseVisualStyleBackColor = true;
+            this.supplierItemsRadioBtn.CheckedChanged += new System.EventHandler(this.SupplierRadioBtn_CheckedChanged);
+            // 
+            // supplierPhoneTextBox
+            // 
+            this.supplierPhoneTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.supplierPhoneTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.supplierPhoneTextBox.Font = new System.Drawing.Font("Verdana Pro Cond Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supplierPhoneTextBox.ForeColor = System.Drawing.Color.White;
+            this.supplierPhoneTextBox.Location = new System.Drawing.Point(212, 261);
+            this.supplierPhoneTextBox.Name = "supplierPhoneTextBox";
+            this.supplierPhoneTextBox.ReadOnly = true;
+            this.supplierPhoneTextBox.Size = new System.Drawing.Size(417, 25);
+            this.supplierPhoneTextBox.TabIndex = 51;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label13.Location = new System.Drawing.Point(102, 257);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.MinimumSize = new System.Drawing.Size(90, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(90, 25);
+            this.label13.TabIndex = 50;
+            this.label13.Text = "Phone";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // supplierEmailTextBox
+            // 
+            this.supplierEmailTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.supplierEmailTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.supplierEmailTextBox.Font = new System.Drawing.Font("Verdana Pro Cond Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supplierEmailTextBox.ForeColor = System.Drawing.Color.White;
+            this.supplierEmailTextBox.Location = new System.Drawing.Point(212, 212);
+            this.supplierEmailTextBox.Name = "supplierEmailTextBox";
+            this.supplierEmailTextBox.ReadOnly = true;
+            this.supplierEmailTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.supplierEmailTextBox.Size = new System.Drawing.Size(417, 25);
+            this.supplierEmailTextBox.TabIndex = 61;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label14.Location = new System.Drawing.Point(102, 208);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(74, 25);
+            this.label14.TabIndex = 60;
+            this.label14.Text = "Email";
+            // 
+            // supplierMobileTextBox
+            // 
+            this.supplierMobileTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.supplierMobileTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.supplierMobileTextBox.Font = new System.Drawing.Font("Verdana Pro Cond Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supplierMobileTextBox.ForeColor = System.Drawing.Color.White;
+            this.supplierMobileTextBox.Location = new System.Drawing.Point(212, 312);
+            this.supplierMobileTextBox.Name = "supplierMobileTextBox";
+            this.supplierMobileTextBox.ReadOnly = true;
+            this.supplierMobileTextBox.Size = new System.Drawing.Size(417, 25);
+            this.supplierMobileTextBox.TabIndex = 63;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label15.Location = new System.Drawing.Point(102, 306);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(86, 25);
+            this.label15.TabIndex = 62;
+            this.label15.Text = "Mobile";
+            // 
+            // supplierWebsiteTextBox
+            // 
+            this.supplierWebsiteTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
+            this.supplierWebsiteTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.supplierWebsiteTextBox.Font = new System.Drawing.Font("Verdana Pro Cond Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.supplierWebsiteTextBox.ForeColor = System.Drawing.Color.White;
+            this.supplierWebsiteTextBox.Location = new System.Drawing.Point(212, 354);
+            this.supplierWebsiteTextBox.Name = "supplierWebsiteTextBox";
+            this.supplierWebsiteTextBox.ReadOnly = true;
+            this.supplierWebsiteTextBox.Size = new System.Drawing.Size(417, 25);
+            this.supplierWebsiteTextBox.TabIndex = 65;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(118)))), ((int)(((byte)(161)))));
+            this.label16.Location = new System.Drawing.Point(102, 354);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(103, 25);
+            this.label16.TabIndex = 64;
+            this.label16.Text = "Website";
             // 
             // ReportsForm
             // 
@@ -586,17 +948,15 @@
             this.warehouseReportsPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.warehousesDataGridView)).EndInit();
             this.itemsReportsPage.ResumeLayout(false);
+            this.itemsReportsPage.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemsDataGridView)).EndInit();
             this.suppliersReportsPage.ResumeLayout(false);
+            this.suppliersReportsPage.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            this.customersReportsPage.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.supplierDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -606,25 +966,19 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage warehouseReportsPage;
         private System.Windows.Forms.TabPage suppliersReportsPage;
-        private System.Windows.Forms.TabPage customersReportsPage;
         private System.Windows.Forms.DataGridView warehousesDataGridView;
         private System.Windows.Forms.ComboBox warehousesComboBox;
         private System.Windows.Forms.TabPage itemsReportsPage;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox itemSearchBar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView itemsDataGridView;
         private System.Windows.Forms.ComboBox itemsComboBox;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.TextBox supplierSearchBar;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView supplierDataGridView;
         private System.Windows.Forms.ComboBox suppliersComboBox;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox customerSearchBar;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView4;
-        private System.Windows.Forms.ComboBox customersComboBox;
         private System.Windows.Forms.TextBox warehouseNameTextBox;
         private System.Windows.Forms.TextBox warehouseSearchBar;
         private System.Windows.Forms.Label searchLbl;
@@ -641,5 +995,32 @@
         private RJCodeAdvance.RJControls.RJDatePicker toDatePicker;
         private RJCodeAdvance.RJControls.RJDatePicker fromDatePicker;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private RJCodeAdvance.RJControls.RJDatePicker itemToDatePicker;
+        private RJCodeAdvance.RJControls.RJDatePicker itemFromDatePicker;
+        private CustomBox.RJControls.RJRadioButton itemWarehousesRadioBtn;
+        private CustomBox.RJControls.RJRadioButton itemSupplyOrdersRadioBtn;
+        private CustomBox.RJControls.RJRadioButton itemIssuanceOrdersRadioBtn;
+        private CustomBox.RJControls.RJRadioButton itemSuppliersRadioBtn;
+        private System.Windows.Forms.TextBox ItemUnitTextBox;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox ItemCodeTextBox;
+        private System.Windows.Forms.TextBox supplierWebsiteTextBox;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox supplierMobileTextBox;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox supplierEmailTextBox;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label12;
+        private RJCodeAdvance.RJControls.RJDatePicker supplierToDatePicker;
+        private RJCodeAdvance.RJControls.RJDatePicker supplierFromDatePicker;
+        private CustomBox.RJControls.RJRadioButton supplierWarehousesRadioBtn;
+        private CustomBox.RJControls.RJRadioButton supplierSupplyOrderRadioBtn;
+        private CustomBox.RJControls.RJRadioButton supplierIssuanceOrderRadioBtn;
+        private CustomBox.RJControls.RJRadioButton supplierItemsRadioBtn;
+        private System.Windows.Forms.TextBox supplierPhoneTextBox;
+        private System.Windows.Forms.Label label13;
     }
 }

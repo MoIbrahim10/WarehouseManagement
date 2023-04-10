@@ -19,8 +19,10 @@ namespace WarehouseManagement
         public int Quantity { get; set; }
         public System.DateTime ProductionDate { get; set; }
         public System.DateTime ExpirationDate { get; set; }
+        public int SupplierID { get; set; }
     
         public virtual Item Item { get; set; }
+        public virtual Supplier Supplier { get; set; }
         public virtual Transfer Transfer { get; set; }
     }
 }

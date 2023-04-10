@@ -11,15 +11,14 @@ namespace WarehouseManagement
 {
     using System;
     using System.Collections.Generic;
-
+    
     public partial class IssuanceOrderItem
     {
         public int IssuanceOrderID { get; set; }
         public int ItemID { get; set; }
         public int Quantity { get; set; }
-
+    
         public virtual IssuanceOrder IssuanceOrder { get; set; }
         public virtual Item Item { get; set; }
-
     }
 }

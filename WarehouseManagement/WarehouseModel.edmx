@@ -131,6 +131,7 @@
           <Property Name="Quantity" Type="int" Nullable="false" />
           <Property Name="ProductionDate" Type="date" Nullable="false" />
           <Property Name="ExpirationDate" Type="date" Nullable="false" />
+          <Property Name="SupplierID" Type="int" Nullable="false" />
         </EntityType>
         <EntityType Name="Transfers">
           <Key>
@@ -139,7 +140,6 @@
           <Property Name="TransferID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="FromWarehouseID" Type="int" Nullable="false" />
           <Property Name="ToWarehouseID" Type="int" Nullable="false" />
-          <Property Name="SupplierID" Type="int" Nullable="false" />
           <Property Name="Status" Type="nchar" MaxLength="10" Nullable="false" />
         </EntityType>
         <EntityType Name="WarehouseCustomer">
@@ -296,18 +296,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Transfers__Suppl__5629CD9C">
-          <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="1" />
-          <End Role="Transfers" Type="Self.Transfers" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Suppliers">
-              <PropertyRef Name="SupplierID" />
-            </Principal>
-            <Dependent Role="Transfers">
-              <PropertyRef Name="SupplierID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="FK__Transfers__ToWar__5441852A">
           <End Role="Warehouses" Type="Self.Warehouses" Multiplicity="1" />
           <End Role="Transfers" Type="Self.Transfers" Multiplicity="*" />
@@ -398,20 +386,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_SupplierID_Suppliers3">
-          <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="Transfers" Type="Self.Transfers" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Suppliers">
-              <PropertyRef Name="SupplierID" />
-            </Principal>
-            <Dependent Role="Transfers">
-              <PropertyRef Name="SupplierID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="fk_ToWarehouseID_Warehouses">
           <End Role="Warehouses" Type="Self.Warehouses" Multiplicity="1">
             <OnDelete Action="Cascade" />
@@ -435,6 +409,18 @@
             </Principal>
             <Dependent Role="TransferItems">
               <PropertyRef Name="ItemID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TransferItems_Suppliers">
+          <End Role="Suppliers" Type="Self.Suppliers" Multiplicity="1" />
+          <End Role="TransferItems" Type="Self.TransferItems" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Suppliers">
+              <PropertyRef Name="SupplierID" />
+            </Principal>
+            <Dependent Role="TransferItems">
+              <PropertyRef Name="SupplierID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -608,10 +594,6 @@
             <End Role="Warehouses" EntitySet="Warehouses" />
             <End Role="Transfers" EntitySet="Transfers" />
           </AssociationSet>
-          <AssociationSet Name="FK__Transfers__Suppl__5629CD9C" Association="Self.FK__Transfers__Suppl__5629CD9C">
-            <End Role="Suppliers" EntitySet="Suppliers" />
-            <End Role="Transfers" EntitySet="Transfers" />
-          </AssociationSet>
           <AssociationSet Name="FK__Transfers__ToWar__5441852A" Association="Self.FK__Transfers__ToWar__5441852A">
             <End Role="Warehouses" EntitySet="Warehouses" />
             <End Role="Transfers" EntitySet="Transfers" />
@@ -640,16 +622,16 @@
             <End Role="Suppliers" EntitySet="Suppliers" />
             <End Role="IssuanceOrders" EntitySet="IssuanceOrders" />
           </AssociationSet>
-          <AssociationSet Name="fk_SupplierID_Suppliers3" Association="Self.fk_SupplierID_Suppliers3">
-            <End Role="Suppliers" EntitySet="Suppliers" />
-            <End Role="Transfers" EntitySet="Transfers" />
-          </AssociationSet>
           <AssociationSet Name="fk_ToWarehouseID_Warehouses" Association="Self.fk_ToWarehouseID_Warehouses">
             <End Role="Warehouses" EntitySet="Warehouses" />
             <End Role="Transfers" EntitySet="Transfers" />
           </AssociationSet>
           <AssociationSet Name="FK_TransferItems_Items" Association="Self.FK_TransferItems_Items">
             <End Role="Items" EntitySet="Items" />
+            <End Role="TransferItems" EntitySet="TransferItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TransferItems_Suppliers" Association="Self.FK_TransferItems_Suppliers">
+            <End Role="Suppliers" EntitySet="Suppliers" />
             <End Role="TransferItems" EntitySet="TransferItems" />
           </AssociationSet>
           <AssociationSet Name="FK_TransferItems_Transfers" Association="Self.FK_TransferItems_Transfers">
@@ -724,6 +706,7 @@
           <NavigationProperty Name="Employees1" Relationship="Self.FK__Employees__Emplo__38996AB5" FromRole="Employees" ToRole="Employees1" />
           <NavigationProperty Name="Employee1" Relationship="Self.FK__Employees__Emplo__38996AB5" FromRole="Employees1" ToRole="Employees" />
           <NavigationProperty Name="Warehouses" Relationship="Self.FK__Warehouse__Manag__3B75D760" FromRole="Employees" ToRole="Warehouses" />
+          <NavigationProperty Name="Warehouses1" Relationship="Self.fk_ManagerID_Employees" FromRole="Employees" ToRole="Warehouses" />
         </EntityType>
         <EntityType Name="IssuanceOrderItem">
           <Key>
@@ -749,6 +732,8 @@
           <NavigationProperty Name="IssuanceOrderItems" Relationship="Self.FK__IssuanceO__Issua__4F7CD00D" FromRole="IssuanceOrders" ToRole="IssuanceOrderItems" />
           <NavigationProperty Name="Supplier" Relationship="Self.FK__IssuanceO__Suppl__4CA06362" FromRole="IssuanceOrders" ToRole="Suppliers" />
           <NavigationProperty Name="Warehouse" Relationship="Self.FK__IssuanceO__Wareh__4BAC3F29" FromRole="IssuanceOrders" ToRole="Warehouses" />
+          <NavigationProperty Name="Supplier1" Relationship="Self.fk_SupplierID_Suppliers2" FromRole="IssuanceOrders" ToRole="Suppliers" />
+          <NavigationProperty Name="Warehouse1" Relationship="Self.fk_WarehouseID_Warehouses2" FromRole="IssuanceOrders" ToRole="Warehouses" />
         </EntityType>
         <EntityType Name="Item">
           <Key>
@@ -794,9 +779,11 @@
           <Property Name="SupplierEmail" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="SupplierWebsite" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="IssuanceOrders" Relationship="Self.FK__IssuanceO__Suppl__4CA06362" FromRole="Suppliers" ToRole="IssuanceOrders" />
+          <NavigationProperty Name="IssuanceOrders1" Relationship="Self.fk_SupplierID_Suppliers2" FromRole="Suppliers" ToRole="IssuanceOrders" />
           <NavigationProperty Name="ItemSuppliers" Relationship="Self.FK_ItemSupplier_Supplier" FromRole="Suppliers" ToRole="ItemSupplier" />
           <NavigationProperty Name="SupplyOrders" Relationship="Self.FK__SupplyOrd__Suppl__44FF419A" FromRole="Suppliers" ToRole="SupplyOrders" />
-          <NavigationProperty Name="Transfers" Relationship="Self.FK__Transfers__Suppl__5629CD9C" FromRole="Suppliers" ToRole="Transfers" />
+          <NavigationProperty Name="SupplyOrders1" Relationship="Self.fk_SupplierID_Suppliers" FromRole="Suppliers" ToRole="SupplyOrders" />
+          <NavigationProperty Name="TransferItems" Relationship="Self.FK_TransferItems_Suppliers" FromRole="Suppliers" ToRole="TransferItems" />
           <NavigationProperty Name="WarehouseSuppliers" Relationship="Self.FK_WarehouseSupplier_Supplier" FromRole="Suppliers" ToRole="WarehouseSupplier" />
         </EntityType>
         <EntityType Name="SupplyOrderItem">
@@ -823,8 +810,10 @@
           <Property Name="SupplierID" Type="Int32" Nullable="false" />
           <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
           <NavigationProperty Name="Supplier" Relationship="Self.FK__SupplyOrd__Suppl__44FF419A" FromRole="SupplyOrders" ToRole="Suppliers" />
+          <NavigationProperty Name="Supplier1" Relationship="Self.fk_SupplierID_Suppliers" FromRole="SupplyOrders" ToRole="Suppliers" />
           <NavigationProperty Name="SupplyOrderItems" Relationship="Self.FK__SupplyOrd__Suppl__47DBAE45" FromRole="SupplyOrders" ToRole="SupplyOrderItems" />
           <NavigationProperty Name="Warehouse" Relationship="Self.FK__SupplyOrd__Wareh__440B1D61" FromRole="SupplyOrders" ToRole="Warehouses" />
+          <NavigationProperty Name="Warehouse1" Relationship="Self.fk_WarehouseID_Warehouses" FromRole="SupplyOrders" ToRole="Warehouses" />
         </EntityType>
         <EntityType Name="sysdiagram">
           <Key>
@@ -846,7 +835,9 @@
           <Property Name="Quantity" Type="Int32" Nullable="false" />
           <Property Name="ProductionDate" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="ExpirationDate" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="SupplierID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Item" Relationship="Self.FK_TransferItems_Items" FromRole="TransferItems" ToRole="Items" />
+          <NavigationProperty Name="Supplier" Relationship="Self.FK_TransferItems_Suppliers" FromRole="TransferItems" ToRole="Suppliers" />
           <NavigationProperty Name="Transfer" Relationship="Self.FK_TransferItems_Transfers" FromRole="TransferItems" ToRole="Transfers" />
         </EntityType>
         <EntityType Name="Transfer">
@@ -856,11 +847,11 @@
           <Property Name="TransferID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="FromWarehouseID" Type="Int32" Nullable="false" />
           <Property Name="ToWarehouseID" Type="Int32" Nullable="false" />
-          <Property Name="SupplierID" Type="Int32" Nullable="false" />
           <Property Name="Status" Type="String" MaxLength="10" FixedLength="true" Unicode="true" Nullable="false" />
-          <NavigationProperty Name="Supplier" Relationship="Self.FK__Transfers__Suppl__5629CD9C" FromRole="Transfers" ToRole="Suppliers" />
           <NavigationProperty Name="TransferItems" Relationship="Self.FK_TransferItems_Transfers" FromRole="Transfers" ToRole="TransferItems" />
           <NavigationProperty Name="Warehouse" Relationship="Self.FK__Transfers__FromW__534D60F1" FromRole="Transfers" ToRole="Warehouses" />
+          <NavigationProperty Name="Warehouse1" Relationship="Self.FK__Transfers__ToWar__5441852A" FromRole="Transfers" ToRole="Warehouses" />
+          <NavigationProperty Name="Warehouse2" Relationship="Self.fk_ToWarehouseID_Warehouses" FromRole="Transfers" ToRole="Warehouses" />
         </EntityType>
         <EntityType Name="WarehouseCustomer">
           <Key>
@@ -892,9 +883,14 @@
           <Property Name="WarehouseAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="ManagerID" Type="Int32" Nullable="false" />
           <NavigationProperty Name="Employee" Relationship="Self.FK__Warehouse__Manag__3B75D760" FromRole="Warehouses" ToRole="Employees" />
+          <NavigationProperty Name="Employee1" Relationship="Self.fk_ManagerID_Employees" FromRole="Warehouses" ToRole="Employees" />
           <NavigationProperty Name="IssuanceOrders" Relationship="Self.FK__IssuanceO__Wareh__4BAC3F29" FromRole="Warehouses" ToRole="IssuanceOrders" />
+          <NavigationProperty Name="IssuanceOrders1" Relationship="Self.fk_WarehouseID_Warehouses2" FromRole="Warehouses" ToRole="IssuanceOrders" />
           <NavigationProperty Name="SupplyOrders" Relationship="Self.FK__SupplyOrd__Wareh__440B1D61" FromRole="Warehouses" ToRole="SupplyOrders" />
+          <NavigationProperty Name="SupplyOrders1" Relationship="Self.fk_WarehouseID_Warehouses" FromRole="Warehouses" ToRole="SupplyOrders" />
           <NavigationProperty Name="Transfers" Relationship="Self.FK__Transfers__FromW__534D60F1" FromRole="Warehouses" ToRole="Transfers" />
+          <NavigationProperty Name="Transfers1" Relationship="Self.FK__Transfers__ToWar__5441852A" FromRole="Warehouses" ToRole="Transfers" />
+          <NavigationProperty Name="Transfers2" Relationship="Self.fk_ToWarehouseID_Warehouses" FromRole="Warehouses" ToRole="Transfers" />
           <NavigationProperty Name="WarehouseCustomers" Relationship="Self.FK_WarehouseCustomer_Warehouse" FromRole="Warehouses" ToRole="WarehouseCustomer" />
           <NavigationProperty Name="WarehouseItems" Relationship="Self.FK_WarehouseItem_Warehouse" FromRole="Warehouses" ToRole="WarehouseItem" />
           <NavigationProperty Name="WarehouseSuppliers" Relationship="Self.FK_WarehouseSupplier_Warehouse" FromRole="Warehouses" ToRole="WarehouseSupplier" />
@@ -1107,18 +1103,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK__Transfers__Suppl__5629CD9C">
-          <End Role="Suppliers" Type="Self.Supplier" Multiplicity="1" />
-          <End Role="Transfers" Type="Self.Transfer" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Suppliers">
-              <PropertyRef Name="SupplierID" />
-            </Principal>
-            <Dependent Role="Transfers">
-              <PropertyRef Name="SupplierID" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="fk_SupplierID_Suppliers">
           <End Role="Suppliers" Type="Self.Supplier" Multiplicity="1">
             <OnDelete Action="Cascade" />
@@ -1133,16 +1117,14 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="fk_SupplierID_Suppliers3">
-          <End Role="Suppliers" Type="Self.Supplier" Multiplicity="1">
-            <OnDelete Action="Cascade" />
-          </End>
-          <End Role="Transfers" Type="Self.Transfer" Multiplicity="*" />
+        <Association Name="FK_TransferItems_Suppliers">
+          <End Role="Suppliers" Type="Self.Supplier" Multiplicity="1" />
+          <End Role="TransferItems" Type="Self.TransferItem" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Suppliers">
               <PropertyRef Name="SupplierID" />
             </Principal>
-            <Dependent Role="Transfers">
+            <Dependent Role="TransferItems">
               <PropertyRef Name="SupplierID" />
             </Dependent>
           </ReferentialConstraint>
@@ -1365,17 +1347,13 @@
             <End Role="Suppliers" EntitySet="Suppliers" />
             <End Role="SupplyOrders" EntitySet="SupplyOrders" />
           </AssociationSet>
-          <AssociationSet Name="FK__Transfers__Suppl__5629CD9C" Association="Self.FK__Transfers__Suppl__5629CD9C">
-            <End Role="Suppliers" EntitySet="Suppliers" />
-            <End Role="Transfers" EntitySet="Transfers" />
-          </AssociationSet>
           <AssociationSet Name="fk_SupplierID_Suppliers" Association="Self.fk_SupplierID_Suppliers">
             <End Role="Suppliers" EntitySet="Suppliers" />
             <End Role="SupplyOrders" EntitySet="SupplyOrders" />
           </AssociationSet>
-          <AssociationSet Name="fk_SupplierID_Suppliers3" Association="Self.fk_SupplierID_Suppliers3">
+          <AssociationSet Name="FK_TransferItems_Suppliers" Association="Self.FK_TransferItems_Suppliers">
             <End Role="Suppliers" EntitySet="Suppliers" />
-            <End Role="Transfers" EntitySet="Transfers" />
+            <End Role="TransferItems" EntitySet="TransferItems" />
           </AssociationSet>
           <AssociationSet Name="FK_WarehouseSupplier_Supplier" Association="Self.FK_WarehouseSupplier_Supplier">
             <End Role="Suppliers" EntitySet="Suppliers" />
@@ -1561,6 +1539,7 @@
                 <ScalarProperty Name="Quantity" ColumnName="Quantity" />
                 <ScalarProperty Name="ProductionDate" ColumnName="ProductionDate" />
                 <ScalarProperty Name="ExpirationDate" ColumnName="ExpirationDate" />
+                <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
@@ -1570,7 +1549,6 @@
                 <ScalarProperty Name="TransferID" ColumnName="TransferID" />
                 <ScalarProperty Name="FromWarehouseID" ColumnName="FromWarehouseID" />
                 <ScalarProperty Name="ToWarehouseID" ColumnName="ToWarehouseID" />
-                <ScalarProperty Name="SupplierID" ColumnName="SupplierID" />
                 <ScalarProperty Name="Status" ColumnName="Status" />
               </MappingFragment>
             </EntityTypeMapping>

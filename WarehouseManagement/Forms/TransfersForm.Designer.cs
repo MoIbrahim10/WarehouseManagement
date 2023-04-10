@@ -28,8 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.fromWarehouseComboBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,12 +42,24 @@
             this.fromWarehouseDataGrid = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.toWarehouseDataGrid = new System.Windows.Forms.DataGridView();
+            this.ItemId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ProductionDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ExpirationDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SupplierName = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.warehouseManagementDBDataSet = new WarehouseManagement.WarehouseManagementDBDataSet();
+            this.saveTransferButton = new RJCodeAdvance.RJControls.RJButton();
+            this.suppliersTableAdapter = new WarehouseManagement.WarehouseManagementDBDataSetTableAdapters.SuppliersTableAdapter();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.fromWarehouseDataGrid)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.toWarehouseDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehouseManagementDBDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -118,8 +131,8 @@
             // 
             // transferButton
             // 
-            this.transferButton.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.transferButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.transferButton.BackColor = System.Drawing.Color.LightBlue;
+            this.transferButton.BackgroundColor = System.Drawing.Color.LightBlue;
             this.transferButton.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.transferButton.BorderRadius = 7;
             this.transferButton.BorderSize = 0;
@@ -127,7 +140,7 @@
             this.transferButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.transferButton.Font = new System.Drawing.Font("Verdana Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.transferButton.ForeColor = System.Drawing.Color.White;
-            this.transferButton.Location = new System.Drawing.Point(1308, 780);
+            this.transferButton.Location = new System.Drawing.Point(1095, 778);
             this.transferButton.Name = "transferButton";
             this.transferButton.Size = new System.Drawing.Size(184, 69);
             this.transferButton.TabIndex = 10;
@@ -158,12 +171,11 @@
             this.fromWarehouseDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.fromWarehouseDataGrid.Location = new System.Drawing.Point(3, 28);
             this.fromWarehouseDataGrid.Name = "fromWarehouseDataGrid";
-            this.fromWarehouseDataGrid.ReadOnly = true;
             this.fromWarehouseDataGrid.RowHeadersWidth = 51;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.fromWarehouseDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.fromWarehouseDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.fromWarehouseDataGrid.RowTemplate.Height = 24;
             this.fromWarehouseDataGrid.Size = new System.Drawing.Size(675, 426);
             this.fromWarehouseDataGrid.TabIndex = 10;
@@ -183,22 +195,113 @@
             // toWarehouseDataGrid
             // 
             this.toWarehouseDataGrid.AllowUserToAddRows = false;
-            this.toWarehouseDataGrid.AllowUserToDeleteRows = false;
-            this.toWarehouseDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.toWarehouseDataGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.toWarehouseDataGrid.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.toWarehouseDataGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.toWarehouseDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.toWarehouseDataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ItemId,
+            this.ItemName,
+            this.Quantity,
+            this.ProductionDate,
+            this.ExpirationDate,
+            this.SupplierName});
             this.toWarehouseDataGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toWarehouseDataGrid.Location = new System.Drawing.Point(3, 28);
             this.toWarehouseDataGrid.Name = "toWarehouseDataGrid";
-            this.toWarehouseDataGrid.ReadOnly = true;
             this.toWarehouseDataGrid.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.MistyRose;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            this.toWarehouseDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.MistyRose;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.toWarehouseDataGrid.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.toWarehouseDataGrid.RowTemplate.Height = 24;
             this.toWarehouseDataGrid.Size = new System.Drawing.Size(675, 426);
             this.toWarehouseDataGrid.TabIndex = 10;
+            this.toWarehouseDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ToWarehouseDataGrid_CellClick);
+            // 
+            // ItemId
+            // 
+            this.ItemId.HeaderText = "Item ID";
+            this.ItemId.MinimumWidth = 6;
+            this.ItemId.Name = "ItemId";
+            this.ItemId.ReadOnly = true;
+            this.ItemId.Width = 103;
+            // 
+            // ItemName
+            // 
+            this.ItemName.HeaderText = "Item Name";
+            this.ItemName.MinimumWidth = 6;
+            this.ItemName.Name = "ItemName";
+            this.ItemName.ReadOnly = true;
+            this.ItemName.Width = 132;
+            // 
+            // Quantity
+            // 
+            this.Quantity.HeaderText = "Quantity";
+            this.Quantity.MinimumWidth = 6;
+            this.Quantity.Name = "Quantity";
+            this.Quantity.Width = 118;
+            // 
+            // ProductionDate
+            // 
+            this.ProductionDate.HeaderText = "Production Date";
+            this.ProductionDate.MinimumWidth = 6;
+            this.ProductionDate.Name = "ProductionDate";
+            this.ProductionDate.Width = 171;
+            // 
+            // ExpirationDate
+            // 
+            this.ExpirationDate.HeaderText = "Expiration Date";
+            this.ExpirationDate.MinimumWidth = 6;
+            this.ExpirationDate.Name = "ExpirationDate";
+            this.ExpirationDate.Width = 165;
+            // 
+            // SupplierName
+            // 
+            this.SupplierName.DataSource = this.suppliersBindingSource;
+            this.SupplierName.DisplayMember = "SupplierName";
+            this.SupplierName.HeaderText = "Supplier Name";
+            this.SupplierName.MaxDropDownItems = 80;
+            this.SupplierName.MinimumWidth = 6;
+            this.SupplierName.Name = "SupplierName";
+            this.SupplierName.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.SupplierName.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.SupplierName.ValueMember = "SupplierID";
+            this.SupplierName.Width = 161;
+            // 
+            // suppliersBindingSource
+            // 
+            this.suppliersBindingSource.DataMember = "Suppliers";
+            this.suppliersBindingSource.DataSource = this.warehouseManagementDBDataSet;
+            // 
+            // warehouseManagementDBDataSet
+            // 
+            this.warehouseManagementDBDataSet.DataSetName = "WarehouseManagementDBDataSet";
+            this.warehouseManagementDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // saveTransferButton
+            // 
+            this.saveTransferButton.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.saveTransferButton.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.saveTransferButton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.saveTransferButton.BorderRadius = 7;
+            this.saveTransferButton.BorderSize = 0;
+            this.saveTransferButton.FlatAppearance.BorderSize = 0;
+            this.saveTransferButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveTransferButton.Font = new System.Drawing.Font("Verdana Pro", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveTransferButton.ForeColor = System.Drawing.Color.White;
+            this.saveTransferButton.Location = new System.Drawing.Point(1308, 778);
+            this.saveTransferButton.Name = "saveTransferButton";
+            this.saveTransferButton.Size = new System.Drawing.Size(184, 69);
+            this.saveTransferButton.TabIndex = 13;
+            this.saveTransferButton.Text = "Save";
+            this.saveTransferButton.TextColor = System.Drawing.Color.White;
+            this.saveTransferButton.UseVisualStyleBackColor = false;
+            this.saveTransferButton.Click += new System.EventHandler(this.SaveTransferButton_Click);
+            // 
+            // suppliersTableAdapter
+            // 
+            this.suppliersTableAdapter.ClearBeforeFill = true;
             // 
             // TransfersForm
             // 
@@ -207,6 +310,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(1579, 878);
             this.ControlBox = false;
+            this.Controls.Add(this.saveTransferButton);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.transferButton);
@@ -231,6 +335,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.fromWarehouseDataGrid)).EndInit();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.toWarehouseDataGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warehouseManagementDBDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -247,5 +353,15 @@
         private System.Windows.Forms.DataGridView fromWarehouseDataGrid;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.DataGridView toWarehouseDataGrid;
+        private RJCodeAdvance.RJControls.RJButton saveTransferButton;
+        private WarehouseManagementDBDataSet warehouseManagementDBDataSet;
+        private System.Windows.Forms.BindingSource suppliersBindingSource;
+        private WarehouseManagementDBDataSetTableAdapters.SuppliersTableAdapter suppliersTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ProductionDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ExpirationDate;
+        private System.Windows.Forms.DataGridViewComboBoxColumn SupplierName;
     }
 }

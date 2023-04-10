@@ -19,6 +19,7 @@ namespace WarehouseManagement
         {
             this.Employees1 = new HashSet<Employee>();
             this.Warehouses = new HashSet<Warehouse>();
+            this.Warehouses1 = new HashSet<Warehouse>();
         }
     
         public int EmployeeID { get; set; }
@@ -37,5 +38,7 @@ namespace WarehouseManagement
         public virtual Employee Employee1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Warehouse> Warehouses { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Warehouse> Warehouses1 { get; set; }
     }
 }

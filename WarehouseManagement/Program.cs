@@ -17,7 +17,7 @@ namespace WarehouseManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TransfersForm());
+            Application.Run(new Dashboard());
         }
     }
 }
